@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="portifolio.css">
+  <link rel="icon" href="img/icone.jpg">
+</head>
+
+<body>
+  <header class="box-head">
+    <ul>
+      <li><a href="#Inicio" data-pt="Inicio" data-en="Home">Inicio</a></li>
+      <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
+      <li><a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a></li>
+      <li><a href="#Habilidades" data-pt="Habilidades" data-en="Skills">Habilidades</a></li>
+      <li><a href="#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
+      <li><button id="toggleTheme" class="btn">
+          <p> 🌙 / ☀️</p>
+        </button></li>
+      <li><button id="toggleLang" class="btn">
+          <p>🇧🇷</p>
+        </button></li>
+    </ul>
+  </header>
+
+  <div class="home">
+    <div><img class="ImagemPrincipal" src="../portfolio/img/minhaImagem.jpeg" alt="MinhaFoto"></div>
+    <div class="direcaotxthome">
+      <section id="Inicio">
+        <h1 data-pt="Olá, eu sou André" data-en="Hello, I'm André">Olá, eu sou André</h1>
+        <h2 data-pt="Desenvolvedor Back-End em formação" data-en="Back-End Developer in training">Desenvolvedor Back-End
+          em formação</h2>
+        <p data-pt="Transformando ideias em código e projetos em soluções reais."
+          data-en="Turning ideas into code and projects into real solutions.">Transformando ideias em código e projetos
+          em soluções reais.</p>
+      </section>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h3 class="projeto-titulo" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h3>
+          <p data-pt="Sou André, tenho 17 anos, formado em Desenvolvimento de Sistemas pela ETEC Aprígio Gonzaga e formado pelo ensino técnico em Vendas na Escola Barão de Ramalho. Tenho experiência com PHP, MySQL, HTML e CSS, e participei de um projeto voluntário em uma ONG. Estudo Java pela Alura e pretendo ingressar no ensino superior em 2026."
+            data-en="I'm André, 17 years old, graduated in Systems Development from ETEC Aprígio Gonzaga and with a technical education in Sales from Escola Barão de Ramalho. I have experience with PHP, MySQL, HTML, and CSS, and participated in a volunteer project in an NGO. I study Java at Alura and plan to enter higher education in 2026.">
+            Sou André, tenho 17 anos, formado em Desenvolvimento de Sistemas pela ETEC Aprígio Gonzaga e formado pelo
+            ensino técnico em Vendas na Escola Barão de Ramalho. Tenho experiência com PHP, MySQL, HTML e CSS, e
+            participei de um projeto voluntário em uma ONG. Estudo Java pela Alura e pretendo ingressar no ensino
+            superior em 2026.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <div class="container">
+      <header class="section-header">
+        <h2 data-pt="Projetos" data-en="Projects">Projetos</h2>
+        <p data-pt="Principais projetos e estudos desenvolvidos." data-en="Main projects and studies developed.">
+          Principais projetos e estudos desenvolvidos.</p>
+      </header>
+
+      <div class="lista-projetos">
+        <!-- Projeto 1: Site para ONG -->
+        <div class="projeto">
+          <img src="../portfolio/img/pet.jpeg" alt="Projeto TCC Bloom" class="projeto-img">
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo" data-pt="TCC Bloom" data-en="TCC Bloom">TCC Bloom</h3>
+            <p class="projeto-descricao"
+              data-pt="Desenvolvido na ETEC Aprígio Gonzaga, o Projeto Bloom facilita inscrições e participação em eventos de ONGs (com foco em meio ambiente), permitindo ver ONGs cadastradas, marcar presença, inscrever-se e participar de um chat por evento."
+              data-en="Developed at ETEC Aprígio Gonzaga, the TCC Bloom Project facilitates registrations and participation in NGO events (focused on the environment), allowing users to see registered NGOs, mark attendance, sign up, and participate in a chat per event.">
+              Desenvolvido na <strong>ETEC Aprígio Gonzaga</strong>, o <strong>Projeto Bloom</strong> facilita
+              inscrições e participação em eventos de <strong>ONGs</strong> (com foco em meio ambiente), permitindo ver
+              ONGs cadastradas, marcar presença, inscrever-se e participar de um chat por evento.
+            </p>
+            <div class="projeto-tecnologias">
+              <span class="tech">PHP</span>
+              <span class="tech">MySQL</span>
+              <span class="tech">HTML</span>
+              <span class="tech">CSS</span>
+            </div>
+            <a href="https://github.com/Viana-vv/TCC-BLOOM" target="_blank"><i class="fa-brands fa-github"></i>
+              Github</a>
+            <!-- Botão que abre o modal -->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#videoModal" class="btn" data-pt="▶ Assistir "
+              data-en="▶ Watch">
+              ▶ Assistir
+            </button>
+          </div>
+        </div>
+
+        <article class="projeto">
+          <img src="../portfolio/img/icone.png" alt="Projeto TCC Marketing Paths" class="projeto-img">
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo" data-pt="TCC Marketing Paths" data-en="TCC Marketing Paths">TCC Marketing Paths
+            </h3>
+            <p class="projeto-descricao"
+              data-pt="Desenvolvido no Barão de Ramalho, o Projeto Marketing Paths é uma plataforma de apoio a microempresas e microempreendedores para aplicar estratégias de marketing digital."
+              data-en="Developed at Barão de Ramalho, the Marketing Paths Project is a platform to support micro-companies and micro-entrepreneurs in applying digital marketing strategies.">
+              Desenvolvido no <strong>Barão de Ramalho</strong>, o<strong> Projeto Marketing Paths</strong> é uma
+              plataforma de apoio a microempresas e microempreendedores para aplicar estratégias de <strong>marketing
+                digital.</strong>
+            </p>
+            <div class="projeto-tecnologias">
+              <span class="tech">PHP</span>
+              <span class="tech">MySQL</span>
+              <span class="tech">HTML</span>
+              <span class="tech">CSS</span>
+            </div>
+             <a href="https://github.com/Viana-vv/TCC---Marketing-Paths-" target="_blank"><i class="fa-brands fa-github"></i>
+              Github</a>
+            <!-- Botão que abre o modal -->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#videoModal2" class="btn" data-pt="▶ Assistir "
+              data-en="▶ Watch">
+              ▶ Assistir
+            </button>
+          </div>
+        </article>
+
+        <article class="projeto">
+          <img src="../portfolio/img/LOGO.png" alt="Projeto para a ong proxima etapa" class="projeto-img">
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo" data-pt="Site para a ONG Próxima Etapa."
+              data-en="Website for NGO Próxima Etapa.">Site para a ONG Próxima Etapa.</h3>
+            <p class="projeto-descricao"
+              data-pt="Projeto voluntário em que desenvolvi uma página web para exibir cards de alunos. O objetivo foi facilitar a visualização e o gerenciamento dos dados dos participantes."
+              data-en="Volunteer project where I developed a web page to display student cards. The goal was to facilitate visualization and management of participant data.">
+              Projeto voluntário em que desenvolvi uma página web para exibir cards de alunos. O objetivo foi facilitar
+              a visualização e o gerenciamento dos dados dos participantes.
+            </p>
+            <div class="projeto-tecnologias">
+              <span class="tech">PHP</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">MySQL</span>
+              <span class="tech">HTML</span>
+              <span class="tech">CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 2: Estudos em Java -->
+        <article class="projeto">
+          <img src="../portfolio/img/IdeaProjects – BytebankApplication.java [bytebank] 10_12_2025 11_23_43.png"
+            alt="Foto estudos java" class="projeto-img">
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo" data-pt="Estudos em Java" data-en="Java Studies">Estudos em Java</h3>
+            <p class="projeto-descricao"
+              data-pt="Projeto pessoal de aperfeiçoamento em Java pela plataforma Alura. Inclui exercícios práticos e o desenvolvimento de lógica de programação voltada ao back-end."
+              data-en="Personal project for improving Java skills on the Alura platform. Includes practical exercises and the development of programming logic focused on back-end.">
+              Projeto pessoal de aperfeiçoamento em <strong>Java</strong> pela plataforma <strong>Alura</strong>. Inclui
+              exercícios práticos e o desenvolvimento de lógica de programação voltada ao <em>back-end</em>.
+            </p>
+            <div class="projeto-tecnologias">
+              <span class="tech">Java</span>
+            </div>
+            <a rel="stylesheet" href="https://github.com/Viana-vv/alura-java-projetos-iniciais-" target="_blank"><i
+                class="fa-brands fa-github"></i> Github</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Seção Habilidades -->
+      <section id="Habilidades" class="habilidades">
+        <div class="container">
+          <header class="section-header">
+            <h2 data-pt="Habilidades" data-en="Skills">Habilidades</h2>
+            <p data-pt="Práticas e Técnicas adquiridas durante minha trajetória."
+              data-en="Practical and Technical skills acquired during my journey.">Práticas e Técnicas adquiridas
+              durante minha trajetória.</p>
+          </header>
+
+          <div class="lista-habilidades">
+            <article class="habilidade">
+              <div class="habilidade-conteudo">
+                <h3 class="habilidade-titulo" data-pt="Gerais:" data-en="General:">Gerais: </h3>
+                <p class="habilidade-descricao"
+                  data-pt="Criatividade. Organização. Comunicação clara. Trabalho em equipe. Comunicação Pessoal. Apresentações Formais."
+                  data-en="Creativity. Organization. Clear communication. Teamwork. Personal communication. Formal presentations.">
+                  Criatividade.<br> Organização.<br> Comunicação clara.<br> Trabalho em equipe.<br> Comunicação
+                  Pessoal.<br> Apresentações Formais.<br>
+                </p>
+              </div>
+            </article>
+
+            <article class="habilidade">
+              <div class="habilidade-conteudo">
+                <h3 class="habilidade-titulo" data-pt="Específicas:" data-en="Specific:"> Específicas: </h3>
+                <p class="habilidade-descricao"
+                  data-pt="Planejamento Comercial. Estratégias de marketing. Ética e responsabilidade social. Resiliência e adaptabilidade."
+                  data-en="Business Planning. Marketing Strategies. Ethics and social responsibility. Resilience and adaptability.">
+                  Planejamento Comercial.<br> Estratégias de marketing.<br> Ética e responsabilidade social.<br>
+                  Resiliência e adaptabilidade.<br>
+                </p>
+              </div>
+            </article>
+
+            <article class="habilidade">
+              <div class="habilidade-conteudo">
+                <h3 class="habilidade-titulo" data-pt="Diferenciais" data-en="Differentials">Diferenciais</h3>
+                <p class="habilidade-descricao"
+                  data-pt="Aprendizado contínuo. Organização e gestão de tempo. Capacidade de liderança em projetos. Projetos acadêmicos e voluntários com impacto social."
+                  data-en="Continuous learning. Organization and time management. Leadership capacity in projects. Academic and volunteer projects with social impact.">
+                  Aprendizado contínuo.<br> Organização e gestão de tempo.<br> Capacidade de liderança em projetos.<br>
+                  Projetos acadêmicos e voluntários com impacto social.<br>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="contato">
+        <div class="container text-center">
+          <header class="section-header">
+            <h2 data-pt="Contatos" data-en="Contacts">Contatos</h2>
+            <p data-pt="Entre em contato ou veja mais" data-en="Get in touch or see more">Entre em contato ou veja mais
+            </p>
+          </header>
+
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <a href="https://www.instagram.com/eeai.viana?utm_source=qr&igsh=MXZhNHY0MHFwdG9vZQ=="
+                alt="link para instagram" target="_blank"> <i class="bi bi-instagram"></i> Instagram</a>
+            </div>
+            <div class="col-auto">
+              <a href="https://www.linkedin.com/in/andr%C3%A9-viniciosvian4/" alt="Link para linkedin"
+                target="_blank"><i class="bi bi-linkedin"></i> Linkedin</a>
+            </div>
+            <div class="col-auto">
+              <a href="https://wa.me/5511945931935" target="_blank" alt="Link para Whatsapp"><i
+                  class="bi bi-whatsapp"></i> Whatsapp</a>
+            </div>
+            <div class="col-auto">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andrevinicios2008@gmail.com&su=Assunto&body=Olá André!"
+                alt="Link para email" target="_blank"><i class="bi bi-envelope-at"></i> Email</a>
+            </div>
+            <div class="col-auto">
+              <a href="https://github.com/Viana-vv" alt="Link para Github" target="_blank"><i
+                  class="fa-brands fa-github"></i> Github</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="meuModalLabel" data-pt="Video mostrando o site e responsividade"
+                data-en="Video demonstrating the website and its responsiveness">Video mostrando o site e responsividade
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+
+
+              <!-- Player embutido -->
+              <div id="video1" style="margin-top:20px;">
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/-VnvoOHFIyg" frameborder="0"
+                  allowfullscreen>
+                </iframe>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-pt="Fechar"
+                data-en="Close">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal -->
+      <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="meuModalLabel" data-pt="Video mostrando o site e responsividade"
+                data-en="Video demonstrating the website and its responsiveness">Video mostrando o site e responsividade
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+
+
+              <!-- Player embutido -->
+              <div id="video1" style="margin-top:20px;">
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/RwzgFS8MGlI" frameborder="0"
+                  allowfullscreen>
+                </iframe>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-pt="Fechar"
+                data-en="Close">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      &nbsp;
+      <!-- JS do Bootstrap (bundle inclui Popper) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="cursor-glow"></div>
+     <script src="JS/portfolio.js"></script>
+  
+</body>
+
+</html>
