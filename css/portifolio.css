@@ -366,6 +366,24 @@ article.habilidade {
   font-size: large;
   color: #a984ff;
 }
+.tecnologias-local img{
+    width: 150px;
+    height: 150px;
+  }
+ .col {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.col.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+.col:hover{
+     transform: translateY(0px);
+  border-color: rgb(136, 93, 245);
+}
 }
 
 span {

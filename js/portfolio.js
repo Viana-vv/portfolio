@@ -36,3 +36,19 @@
       });
     });
   });
+
+
+const elementos = document.querySelectorAll('.scroll-ativo');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('ativo');
+    }
+  });
+}, {
+  threshold: 0.3 // % do elemento visível
+});
+
+elementos.forEach(el => observer.observe(el));
+
