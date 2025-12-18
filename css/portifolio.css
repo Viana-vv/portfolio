@@ -379,7 +379,9 @@ article.habilidade {
 .col.ativo {
   opacity: 1;
   transform: translateY(0);
+  background-color: aqua;
 }
+
 .col:hover{
      transform: translateY(0px);
   border-color: rgb(136, 93, 245);
