@@ -20,6 +20,6 @@ Este repositório reúne os projetos que refletem minha jornada como desenvolved
 
 📬 Contato
 Quer trocar ideias ou colaborar em projetos?  
-- LinkedIn: [Seu perfil aqui]  
-- Email: seuemail@exemplo.com  
+- LinkedIn:https://www.linkedin.com/in/andr%C3%A9-viniciosvian4/ 
+- Email: andrevinicios2008@gmail.com
 
