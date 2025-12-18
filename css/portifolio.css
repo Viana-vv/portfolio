@@ -458,3 +458,15 @@ body.light .tech:active {
     box-shadow: 10px 10px 22px rgb(136, 93, 245);
   }
 }
+@media (max-width: 768px) {
+  .video-container {
+    padding-bottom: 75%; /* mais alto no celular */
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-container {
+    max-width: 800px; /* limita largura em telas grandes */
+    margin: 0 auto;   /* centraliza */
+  }
+}
