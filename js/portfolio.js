@@ -22,3 +22,17 @@
           light.style.left = e.clientX + "px";
           light.style.top = e.clientY + "px";
         });
+
+        document.addEventListener("DOMContentLoaded", () => {
+    const linksNovaAba = document.querySelectorAll('a[target="_blank"]');
+
+    linksNovaAba.forEach(link => {
+      link.addEventListener("click", function (event) {
+        const confirmar = confirm("Este link será aberto em uma nova aba. Deseja continuar?");
+        
+        if (!confirmar) {
+          event.preventDefault();
+        }
+      });
+    });
+  });
