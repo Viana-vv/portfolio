@@ -1,15 +1,13 @@
-
 body {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   transition: background-color 1.0s ease, color 0.4s ease;
 }
 
-p{
-    font-size: 0.95vw;
-    margin-bottom: 0rem;
+p {
+  font-size: 0.95rem;
+  margin-bottom: 0rem;
 }
-
 
 * {
   margin: 0;
@@ -23,7 +21,7 @@ ul {
   align-items: center;
   height: auto;
   margin-top: 10px;
-    grid-template-rows: repeat(3, auto); /* no mínimo 3 linhas por coluna */
+  grid-template-rows: repeat(3, auto);
 }
 
 li {
@@ -31,11 +29,10 @@ li {
   text-decoration: none;
 }
 
-.box-head{
-  border-bottom:rgb(136, 93, 245) solid 0.4vh ;
-   transition: background-color 1.0s ease, color 0.4s ease;
+.box-head {
+  border-bottom: rgb(136, 93, 245) solid 0.4vh;
+  transition: background-color 1.0s ease, color 0.4s ease;
 }
-
 
 .home {
   display: flex;
@@ -44,13 +41,13 @@ li {
   width: 100%;
   height: auto;
   background-color: black;
-   transition: background-color 1.0s ease, color 0.4s ease;
+  transition: background-color 1.0s ease, color 0.4s ease;
 }
 
 .ImagemPrincipal {
-  margin-top: 2vw;
-  width: 20vw;
-  height: 20vw;
+  margin-top: 2rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   box-shadow: 10px 10px 22px rgb(136, 93, 245);
 }
@@ -58,17 +55,18 @@ li {
 .direcaotxthome {
   display: flex;
   flex-direction: column;
-  margin-left: 2vw;
+  margin-left: 2rem;
 }
 
 a {
   text-decoration: none;
   color: aliceblue;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
-a:hover {
-    font-size: 1vw;
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: rgb(136, 93, 245);
 }
@@ -78,7 +76,9 @@ a:hover {
   color: rgb(0, 0, 0);
 }
 
-.modalStyle:hover {
+.modalStyle:hover,
+.modalStyle:focus,
+.modalStyle:active {
   text-decoration: none;
   color: rgb(136, 93, 245);
 }
@@ -93,14 +93,14 @@ section {
 
 /* ===== Seção Projetos ===== */
 .projetos {
- transition: background-color 1.0s ease, color 0.4s ease;
+  transition: background-color 1.0s ease, color 0.4s ease;
   background-color: #0d1117;
   color: #e6edf3;
   font-family: "Inter", sans-serif;
 }
 
 .projetos .container {
-  max-width: 98vw;
+  max-width: 98%;
   margin: 0 auto;
 }
 
@@ -110,14 +110,14 @@ section {
 }
 
 .section-header h2 {
-  font-size: 2vw;
+  font-size: 2rem;
   margin-bottom: 10px;
   color: rgb(136, 93, 245);
 }
 
 .section-header p {
   color: #918b9e;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 /* ===== Lista de Projetos ===== */
@@ -133,7 +133,6 @@ section {
   border-radius: 12px;
   padding: 16px;
   transition: transform 0.2s ease, border-color 0.2s ease;
-  
 }
 
 .projeto:hover {
@@ -142,17 +141,17 @@ section {
 }
 
 .projeto-titulo {
-font-size: 2vw;
+  font-size: 2rem;
   color: rgb(136, 93, 245);
   margin-bottom: 10px;
 }
 
 .projeto-descricao {
   color: #cec9d9;
-  font-size: 0.95vw;
+  font-size: 0.95rem;
   line-height: 1.5;
-  
 }
+
 .projeto-img {
   width: 100%;
   height: 160px;
@@ -160,6 +159,7 @@ font-size: 2vw;
   border-radius: 8px;
   margin-bottom: 16px;
 }
+
 .projeto-tecnologias {
   display: flex;
   flex-wrap: wrap;
@@ -168,41 +168,42 @@ font-size: 2vw;
 }
 
 .tech {
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   padding: 4px 6px;
   border-radius: 4px;
   background-color: #0d1117;
   border: 1px solid #30363d;
   color: #938b9e;
- 
 }
-.tech:hover {
+
+.tech:hover,
+.tech:focus,
+.tech:active {
   background-color: rgb(136, 93, 245);
   border-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
-
-
 .btn {
-
- color: #ffffff;
+  color: #ffffff;
 }
-.btn:hover {
+
+.btn:hover,
+.btn:focus,
+.btn:active {
   background-color: rgb(136, 93, 245);
 }
 
 /* ===== Seção Habilidades ===== */
 .habilidades {
-  
   background-color: #0d1117;
   color: #e6edf3;
   font-family: "Inter", sans-serif;
-      transition: background-color 1.0s ease, color 0.4s ease;
+  transition: background-color 1.0s ease, color 0.4s ease;
 }
 
 .habilidades .container {
-  max-width: 98vw;
+  max-width: 98%;
   margin: 0 auto;
 }
 
@@ -212,20 +213,20 @@ font-size: 2vw;
 }
 
 .habilidades .section-header h2 {
-  font-size: 2vw;
+  font-size: 2rem;
   margin-bottom: 10px;
   color: rgb(136, 93, 245);
 }
 
 .habilidades .section-header p {
   color: #8e8b9e;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 /* ===== Lista de Habilidades ===== */
 .lista-habilidades {
-  display: flex;            
-  justify-content: center;    
+  display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -233,12 +234,11 @@ font-size: 2vw;
   background-color: #161b22;
   border: 1px solid #30363d;
   border-radius: 12px;
-  padding: 24px; 
-      
+  padding: 24px;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-article.habilidade{
+article.habilidade {
   width: 700px !important;
 }
 
@@ -248,16 +248,15 @@ article.habilidade{
 }
 
 .habilidade-titulo {
-  font-size: 1.25vw;
+  font-size: 1.25rem;
   color: rgb(136, 93, 245);
   margin-bottom: 10px;
 }
 
 .habilidade-descricao {
   color: #c9d1d9;
-  font-size: 0.95vw;
+  font-size: 0.95rem;
   line-height: 1.5;
-
 }
 
 /* ===== Mobile ===== */
@@ -266,8 +265,7 @@ article.habilidade{
   article.projeto {
     width: 100%;
     height: auto;
-    max-width: 98vw;
-    min-width: none;
+    max-width: 98%;
   }
 
   .box-head {
@@ -301,8 +299,7 @@ article.habilidade{
   article.habilidade {
     width: 100%;
     height: auto;
-    max-width: 98vw;
-    min-width: none;
+    max-width: 98%;
   }
 
   ul {
@@ -312,15 +309,15 @@ article.habilidade{
   }
 
   .section-header h2 {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
 
   a, i {
-    font-size: small;
+    font-size: 0.9rem;
   }
 
   h1, h2, p {
-    font-size: small;
+    font-size: 0.9rem;
     margin-left: 20px;
   }
 
@@ -334,22 +331,13 @@ article.habilidade{
     flex-direction: column;
     margin-top: 12vh;
   }
-
-  /* ===== Ajuste do modal só no celular ===== */
-  .modal {
-    width: 90%;        /* ocupa quase toda a largura da tela */
-    max-width: 320px;  /* limite máximo no mobile */
-    padding: 12px;     /* menos espaço interno */
-    font-size: 0.9rem; /* texto menor */
-  }
 }
 
-
-
-
-span{
+span {
   color: rgb(136, 93, 245);
 }
+
+/* ===== Cursor highlight ===== */
 .cursor-light {
   position: fixed;
   width: 1000px;
@@ -372,47 +360,52 @@ body.light {
   color: #000000;
   transition: background-color 1.0s ease, color 0.4s ease;
 }
-body.light .box-head{
+
+body.light .box-head {
   height: auto;
-border-bottom: #a984ff solid 0.4vh ;
- transition: background-color 1.0s ease, color 0.4s ease;
+  border-bottom: #a984ff solid 0.4vh;
 }
+
 body.light a {
   color: #000000;
 }
 
-body.light a:hover {
+body.light a:hover,
+body.light a:focus,
+body.light a:active {
   color: rgb(136, 93, 245);
 }
 
-/* Seções */
+/* Seções modo claro */
 body.light .projetos,
 body.light .habilidades {
   background-color: #ffffff;
   color: #000000;
-   transition: background-color 1.0s ease, color 0.4s ease;
-}
-body.light .home{
-  background-color: #ffffff;
-  color: #000000;
- transition: background-color 1.0s ease, color 0.4s ease;
+  transition: background-color 1.0s ease, color 0.4s ease;
 }
 
-/* Cards */
+body.light .home {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 1.0s ease, color 0.4s ease;
+}
+
+/* Cards modo claro */
 body.light .projeto,
 body.light .habilidade {
   background-color: #f5f5f5;
   border-color: hsl(266, 100%, 65%);
-   transition: background-color 1.0s ease, color 0.4s ease;
+  transition: background-color 1.0s ease, color 0.4s ease;
 }
 
-/* Textos */
+/* Textos modo claro */
 body.light .projeto-descricao,
 body.light .habilidade-descricao,
 body.light p {
   color: #333333 !important;
 }
-body.light .btn{
+
+body.light .btn {
   color: #000000 !important;
 }
 
@@ -420,8 +413,10 @@ body.light .btn{
 body.light .cursor-light {
   display: none;
 }
-body.light .tech{
-  font-size: 0.5vw;
+
+/* Tech chips modo claro */
+body.light .tech {
+  font-size: 0.8rem;
   padding: 4px 6px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -429,32 +424,37 @@ body.light .tech{
   color: #918b9e;
   font-weight: 500;
 }
-body.light .tech:hover {
+
+body.light .tech:hover,
+body.light .tech:focus,
+body.light .tech:active {
   background-color: rgb(136, 93, 245);
   border-color: rgb(208, 150, 255);
   color: rgb(0, 0, 0);
 }
 
+/* ===== Telas muito grandes ===== */
+@media (min-width: 3000px) {
+  h1 {
+    font-size: 2rem;
+  }
 
-@media(min-width:3000px ){
-h1{
-  font-size: 2vw;
-}
-.projeto-img{
-  width: 100%;
-  max-width: 25vw;
-  height: 100%;
-  max-height: 10vh;
-}
+  .projeto-img {
+    width: 100%;
+    max-width: 25rem;
+    height: 100%;
+    max-height: 10vh;
+  }
 
-.btn{
-  font-size: 1vw;
-}
-.ImagemPrincipal {
-  margin-top: 2vw;
-  width: 14.5vw;
-  height: 14.5vw;
-  border-radius: 50%;
-  box-shadow: 10px 10px 22px rgb(136, 93, 245);
-}
+  .btn {
+    font-size: 1rem;
+  }
+
+  .ImagemPrincipal {
+    margin-top: 2rem;
+    width: 14.5rem;
+    height: 14.5rem;
+    border-radius: 50%;
+    box-shadow: 10px 10px 22px rgb(136, 93, 245);
+  }
 }
