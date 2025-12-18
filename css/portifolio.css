@@ -386,6 +386,13 @@ article.habilidade {
      transform: translateY(0px);
   border-color: rgb(136, 93, 245);
 }
+
+
+.tech.ativo {
+  background-color: rgb(136, 93, 245);
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
 }
 
 span {
