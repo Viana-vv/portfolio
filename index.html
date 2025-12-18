@@ -20,25 +20,33 @@
 <body>
   <header class="box-head">
 
-<div class="menu-toggle" onclick="openMenu()">
-  <span></span>
-  <span></span>
-  <span></span>
+<div class="header-mobile">
+  <div class="li-local-img mobile-logo">
+    <img src="img/img/icone.jpg" alt="icone">
+    <p>VIANA.DEV</p>
+  </div>
+
+  <div class="menu-toggle" onclick="openMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </div>
 
 
   <ul id="menu">
+  
      <li class="menu-close" onclick="closeMenu()">✕</li>
     <li class="li-local-img">
       <img src="img/img/icone.jpg" alt="icone">
       <p>VIANA.DEV</p>
     </li>
-    <li><a href="#Inicio">Inicio</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#Habilidades">Habilidades</a></li>
-    <li><a href="#Tecnologias">Tecnologias</a></li>
-    <li><a href="#contato">Contato</a></li>
+    <li><a class="menu-links" href="#Inicio">Inicio</a></li>
+    <li><a  class="menu-links" href="#sobre">Sobre</a></li>
+    <li><a  class="menu-links" href="#projetos">Projetos</a></li>
+    <li><a  class="menu-links" href="#Habilidades">Habilidades</a></li>
+    <li><a   class="menu-links" href="#Tecnologias">Tecnologias</a></li>
+    <li><a  class="menu-links" href="#contato">Contato</a></li>
     <li>
       <button id="toggleTheme" class="btn">🌙 / ☀️</button>
     </li>
