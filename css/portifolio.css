@@ -362,6 +362,10 @@ article.habilidade {
     flex-direction: column;
     margin-top: 12vh;
   }
+  .tecnologias-local p {
+  font-size: large;
+  color: #a984ff;
+}
 }
 
 span {
