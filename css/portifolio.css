@@ -1,13 +1,15 @@
+
 body {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   transition: background-color 1.0s ease, color 0.4s ease;
 }
 
-p {
-  font-size: 0.95rem;
-  margin-bottom: 0rem;
+p{
+    font-size: 0.95vw;
+    margin-bottom: 0rem;
 }
+
 
 * {
   margin: 0;
@@ -21,7 +23,7 @@ ul {
   align-items: center;
   height: auto;
   margin-top: 10px;
-  grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, auto); /* no mínimo 3 linhas por coluna */
 }
 
 li {
@@ -29,10 +31,11 @@ li {
   text-decoration: none;
 }
 
-.box-head {
-  border-bottom: rgb(136, 93, 245) solid 0.4vh;
-  transition: background-color 1.0s ease, color 0.4s ease;
+.box-head{
+  border-bottom:rgb(136, 93, 245) solid 0.4vh ;
+   transition: background-color 1.0s ease, color 0.4s ease;
 }
+
 
 .home {
   display: flex;
@@ -41,13 +44,13 @@ li {
   width: 100%;
   height: auto;
   background-color: black;
-  transition: background-color 1.0s ease, color 0.4s ease;
+   transition: background-color 1.0s ease, color 0.4s ease;
 }
 
 .ImagemPrincipal {
-  margin-top: 2rem;
-  width: 20rem;
-  height: 20rem;
+  margin-top: 2vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   box-shadow: 10px 10px 22px rgb(136, 93, 245);
 }
@@ -55,18 +58,17 @@ li {
 .direcaotxthome {
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
+  margin-left: 2vw;
 }
 
 a {
   text-decoration: none;
   color: aliceblue;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
-a:hover,
-a:focus,
-a:active {
+a:hover {
+    font-size: 1vw;
   text-decoration: none;
   color: rgb(136, 93, 245);
 }
@@ -76,9 +78,7 @@ a:active {
   color: rgb(0, 0, 0);
 }
 
-.modalStyle:hover,
-.modalStyle:focus,
-.modalStyle:active {
+.modalStyle:hover {
   text-decoration: none;
   color: rgb(136, 93, 245);
 }
@@ -93,14 +93,14 @@ section {
 
 /* ===== Seção Projetos ===== */
 .projetos {
-  transition: background-color 1.0s ease, color 0.4s ease;
+ transition: background-color 1.0s ease, color 0.4s ease;
   background-color: #0d1117;
   color: #e6edf3;
   font-family: "Inter", sans-serif;
 }
 
 .projetos .container {
-  max-width: 98%;
+  max-width: 98vw;
   margin: 0 auto;
 }
 
@@ -110,14 +110,14 @@ section {
 }
 
 .section-header h2 {
-  font-size: 2rem;
+  font-size: 2vw;
   margin-bottom: 10px;
   color: rgb(136, 93, 245);
 }
 
 .section-header p {
   color: #918b9e;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 /* ===== Lista de Projetos ===== */
@@ -133,6 +133,7 @@ section {
   border-radius: 12px;
   padding: 16px;
   transition: transform 0.2s ease, border-color 0.2s ease;
+  
 }
 
 .projeto:hover {
@@ -141,17 +142,17 @@ section {
 }
 
 .projeto-titulo {
-  font-size: 2rem;
+font-size: 2vw;
   color: rgb(136, 93, 245);
   margin-bottom: 10px;
 }
 
 .projeto-descricao {
   color: #cec9d9;
-  font-size: 0.95rem;
+  font-size: 0.95vw;
   line-height: 1.5;
+  
 }
-
 .projeto-img {
   width: 100%;
   height: 160px;
@@ -159,7 +160,6 @@ section {
   border-radius: 8px;
   margin-bottom: 16px;
 }
-
 .projeto-tecnologias {
   display: flex;
   flex-wrap: wrap;
@@ -168,42 +168,41 @@ section {
 }
 
 .tech {
-  font-size: 0.8rem;
+  font-size: 0.8vw;
   padding: 4px 6px;
   border-radius: 4px;
   background-color: #0d1117;
   border: 1px solid #30363d;
   color: #938b9e;
+ 
 }
-
-.tech:hover,
-.tech:focus,
-.tech:active {
+.tech:hover {
   background-color: rgb(136, 93, 245);
   border-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
-.btn {
-  color: #ffffff;
-}
 
-.btn:hover,
-.btn:focus,
-.btn:active {
+
+.btn {
+
+ color: #ffffff;
+}
+.btn:hover {
   background-color: rgb(136, 93, 245);
 }
 
 /* ===== Seção Habilidades ===== */
 .habilidades {
+  
   background-color: #0d1117;
   color: #e6edf3;
   font-family: "Inter", sans-serif;
-  transition: background-color 1.0s ease, color 0.4s ease;
+      transition: background-color 1.0s ease, color 0.4s ease;
 }
 
 .habilidades .container {
-  max-width: 98%;
+  max-width: 98vw;
   margin: 0 auto;
 }
 
@@ -213,20 +212,20 @@ section {
 }
 
 .habilidades .section-header h2 {
-  font-size: 2rem;
+  font-size: 2vw;
   margin-bottom: 10px;
   color: rgb(136, 93, 245);
 }
 
 .habilidades .section-header p {
   color: #8e8b9e;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 /* ===== Lista de Habilidades ===== */
 .lista-habilidades {
-  display: flex;
-  justify-content: center;
+  display: flex;            
+  justify-content: center;    
   gap: 24px;
 }
 
@@ -234,11 +233,12 @@ section {
   background-color: #161b22;
   border: 1px solid #30363d;
   border-radius: 12px;
-  padding: 24px;
+  padding: 24px; 
+      
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-article.habilidade {
+article.habilidade{
   width: 700px !important;
 }
 
@@ -248,15 +248,16 @@ article.habilidade {
 }
 
 .habilidade-titulo {
-  font-size: 1.25rem;
+  font-size: 1.25vw;
   color: rgb(136, 93, 245);
   margin-bottom: 10px;
 }
 
 .habilidade-descricao {
   color: #c9d1d9;
-  font-size: 0.95rem;
+  font-size: 0.95vw;
   line-height: 1.5;
+
 }
 
 /* ===== Mobile ===== */
@@ -265,7 +266,8 @@ article.habilidade {
   article.projeto {
     width: 100%;
     height: auto;
-    max-width: 98%;
+    max-width: 98vw;
+    min-width: none;
   }
 
   .box-head {
@@ -299,7 +301,8 @@ article.habilidade {
   article.habilidade {
     width: 100%;
     height: auto;
-    max-width: 98%;
+    max-width: 98vw;
+    min-width: none;
   }
 
   ul {
@@ -309,15 +312,15 @@ article.habilidade {
   }
 
   .section-header h2 {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
   a, i {
-    font-size: 0.9rem;
+    font-size: small;
   }
 
   h1, h2, p {
-    font-size: 0.9rem;
+    font-size: small;
     margin-left: 20px;
   }
 
@@ -331,13 +334,22 @@ article.habilidade {
     flex-direction: column;
     margin-top: 12vh;
   }
+
+  /* ===== Ajuste do modal só no celular ===== */
+  .modal {
+    width: 90%;        /* ocupa quase toda a largura da tela */
+    max-width: 320px;  /* limite máximo no mobile */
+    padding: 12px;     /* menos espaço interno */
+    font-size: 0.9rem; /* texto menor */
+  }
 }
 
-span {
+
+
+
+span{
   color: rgb(136, 93, 245);
 }
-
-/* ===== Cursor highlight ===== */
 .cursor-light {
   position: fixed;
   width: 1000px;
@@ -360,52 +372,47 @@ body.light {
   color: #000000;
   transition: background-color 1.0s ease, color 0.4s ease;
 }
-
-body.light .box-head {
+body.light .box-head{
   height: auto;
-  border-bottom: #a984ff solid 0.4vh;
+border-bottom: #a984ff solid 0.4vh ;
+ transition: background-color 1.0s ease, color 0.4s ease;
 }
-
 body.light a {
   color: #000000;
 }
 
-body.light a:hover,
-body.light a:focus,
-body.light a:active {
+body.light a:hover {
   color: rgb(136, 93, 245);
 }
 
-/* Seções modo claro */
+/* Seções */
 body.light .projetos,
 body.light .habilidades {
   background-color: #ffffff;
   color: #000000;
-  transition: background-color 1.0s ease, color 0.4s ease;
+   transition: background-color 1.0s ease, color 0.4s ease;
 }
-
-body.light .home {
+body.light .home{
   background-color: #ffffff;
   color: #000000;
-  transition: background-color 1.0s ease, color 0.4s ease;
+ transition: background-color 1.0s ease, color 0.4s ease;
 }
 
-/* Cards modo claro */
+/* Cards */
 body.light .projeto,
 body.light .habilidade {
   background-color: #f5f5f5;
   border-color: hsl(266, 100%, 65%);
-  transition: background-color 1.0s ease, color 0.4s ease;
+   transition: background-color 1.0s ease, color 0.4s ease;
 }
 
-/* Textos modo claro */
+/* Textos */
 body.light .projeto-descricao,
 body.light .habilidade-descricao,
 body.light p {
   color: #333333 !important;
 }
-
-body.light .btn {
+body.light .btn{
   color: #000000 !important;
 }
 
@@ -413,10 +420,8 @@ body.light .btn {
 body.light .cursor-light {
   display: none;
 }
-
-/* Tech chips modo claro */
-body.light .tech {
-  font-size: 0.8rem;
+body.light .tech{
+  font-size: 0.5vw;
   padding: 4px 6px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -424,55 +429,32 @@ body.light .tech {
   color: #918b9e;
   font-weight: 500;
 }
-
-body.light .tech:hover,
-body.light .tech:focus,
-body.light .tech:active {
+body.light .tech:hover {
   background-color: rgb(136, 93, 245);
   border-color: rgb(208, 150, 255);
   color: rgb(0, 0, 0);
 }
 
-/* ===== Telas muito grandes ===== */
-@media (min-width: 3000px) {
-  h1 {
-    font-size: 2rem;
-  }
 
-  .projeto-img {
-    width: 100%;
-    max-width: 25rem;
-    height: 100%;
-    max-height: 10vh;
-  }
-
-  .btn {
-    font-size: 1rem;
-  }
-
-  .ImagemPrincipal {
-    margin-top: 2rem;
-    width: 14.5rem;
-    height: 14.5rem;
-    border-radius: 50%;
-    box-shadow: 10px 10px 22px rgb(136, 93, 245);
-  }
+@media(min-width:3000px ){
+h1{
+  font-size: 2vw;
 }
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* proporção 16:9 */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #000;
-  border-radius: 8px;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.projeto-img{
   width: 100%;
+  max-width: 25vw;
   height: 100%;
-  border: none;
+  max-height: 10vh;
+}
+
+.btn{
+  font-size: 1vw;
+}
+.ImagemPrincipal {
+  margin-top: 2vw;
+  width: 14.5vw;
+  height: 14.5vw;
+  border-radius: 50%;
+  box-shadow: 10px 10px 22px rgb(136, 93, 245);
+}
 }
