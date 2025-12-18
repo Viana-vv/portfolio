@@ -60,3 +60,12 @@ function openMenu() {
     document.getElementById("menu").classList.remove("active");
     document.querySelector(".menu-toggle").style.display = "flex";
   }
+  
+  // fecha ao clicar em um item
+  document.querySelectorAll("#menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        closeMenu();
+      }
+    });
+  });
