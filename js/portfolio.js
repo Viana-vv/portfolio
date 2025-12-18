@@ -51,4 +51,12 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 elementos.forEach(el => observer.observe(el));
+function openMenu() {
+    document.getElementById("menu").classList.add("active");
+    document.querySelector(".menu-toggle").style.display = "none";
+  }
 
+  function closeMenu() {
+    document.getElementById("menu").classList.remove("active");
+    document.querySelector(".menu-toggle").style.display = "flex";
+  }

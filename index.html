@@ -11,25 +11,42 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/portifolio.css">
   <link rel="icon" href="img/img/icone.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Coiny&family=Montez&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Coiny&family=Montez&family=Titan+One&display=swap" rel="stylesheet">
 </head>
+ 
+<body><header class="box-head">
 
-<body>
-  <header class="box-head">
-    <ul>
-      <li><a href="#Inicio" data-pt="Inicio" data-en="Home">Inicio</a></li>
-      <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
-      <li><a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a></li>
-      <li><a href="#Habilidades" data-pt="Habilidades" data-en="Skills">Habilidades</a></li>
-      <li><a href="#Tecnologias" data-pt="Tecnologias" data-en="Technologies">Tecnologias</a></li>
-      <li><a href="#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
-      <li><button id="toggleTheme" class="btn">
-          <p> 🌙 / ☀️</p>
-        </button></li>
-      <li><button id="toggleLang" class="btn">
-          <p>🇧🇷</p>
-        </button></li>
-    </ul>
-  </header>
+<div class="menu-toggle" onclick="openMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+  <ul id="menu">
+     <li class="menu-close" onclick="closeMenu()">✕</li>
+    <li class="li-local-img">
+      <img src="img/img/icone.jpg" alt="icone">
+      <p>VIANA.DEV</p>
+    </li>
+    <li><a href="#Inicio">Inicio</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#Habilidades">Habilidades</a></li>
+    <li><a href="#Tecnologias">Tecnologias</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li>
+      <button id="toggleTheme" class="btn">🌙 / ☀️</button>
+    </li>
+    <li>
+      <button id="toggleLang" class="btn">🇧🇷</button>
+    </li>
+  </ul>
+</header>
+
 
   <div class="home">
     <div><img class="ImagemPrincipal" src="img/img/minhaImagem.jpeg" alt="MinhaFoto"></div>
