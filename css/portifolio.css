@@ -366,7 +366,7 @@ article.habilidade {
    
 .menu-links{
  margin-left: auto;
-  color: rgb(136, 93, 245);
+  color: rgb(255, 255, 255);
    font-size: 15px;
       font-family: "Bungee", sans-serif;
   font-style: normal;
@@ -380,8 +380,8 @@ article.habilidade {
   }
 
 .header-mobile i{
-   width: 15px;
-    height: 15px;
+   width: 40px;
+    height: 40px;
 }
   
   .mobile-logo {
