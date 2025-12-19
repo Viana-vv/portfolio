@@ -373,8 +373,8 @@ article.habilidade {
   }
 
 .header-mobile i{
-   width: 10px;
-    height: 10px;
+   width: 15px;
+    height: 15px;
 }
   
   .mobile-logo {
@@ -512,7 +512,7 @@ article.habilidade {
     top: 0;
     right: -100%;
     height: 100vh;
-    width: 75%;
+    width: 100%;
     max-width: 1000px;
 
     background: rgba(20, 20, 20, 0.55);
