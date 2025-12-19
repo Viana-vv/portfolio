@@ -364,7 +364,14 @@ article.habilidade {
 /* ===== Mobile ===== */
 @media (max-width: 1000px) {
    
+.menu-links{
+ margin-left: auto;
+  color: rgb(136, 93, 245);
+   font-size: 10px;
+      font-family: "Bungee", sans-serif;
+  font-style: normal;
 
+}
   .header-mobile {
     display: flex;
     align-items: center;
