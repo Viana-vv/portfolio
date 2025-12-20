@@ -57,8 +57,8 @@
           name="Botão para mudar para modo claro/escuro" aria-label="Botão modo escuro/claro">🌙 / ☀️</button>
       </li>
       <li>
-        <button id="toggleLang" class="btn" alt="Botão para mudar a linguagem"
-          name="Botão para mudar a linguagem" aria-label="Botão de linguagem">🇧🇷</button>
+        <button id="toggleLang" class="btn" alt="Botão para mudar a linguagem" name="Botão para mudar a linguagem"
+          aria-label="Botão de linguagem">🇧🇷</button>
       </li>
       <li>
         <div class="header-mobile">
@@ -142,6 +142,11 @@
               data-en="▶ Watch">
               ▶ Assistir
             </button>
+              <!-- Botão que abre o modal de mais informações -->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal-detalhes" class="btn"
+              data-pt="+ Detalhes" data-en=" + Details">
+              + Detalhes
+            </button>
           </div>
         </div>
 
@@ -170,6 +175,11 @@
             <button type="button" data-bs-toggle="modal" data-bs-target="#videoModal2" class="btn" data-pt="▶ Assistir "
               data-en="▶ Watch">
               ▶ Assistir
+            </button>
+            <!-- Botão que abre o modal de mais informações -->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal2-detalhes" class="btn"
+              data-pt="+ Detalhes" data-en=" + Details">
+              + Detalhes
             </button>
           </div>
         </article>
@@ -401,7 +411,73 @@
           </div>
         </div>
       </div>
-   
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="Modal-detalhes" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="meuModalLabel"
+                data-pt="BLOOM – Sistema de inscrições para eventos de ONGs"
+                data-en="BLOOM – Registration system for NGO events">BLOOM – Sistema de inscrições para eventos de ONGs
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong> BLOOM</strong> é um site desenvolvido para simplificar o processo de inscrição em eventos de ONGs, reduzindo burocracia e melhorando a experiência dos participantes.</p>
+              <p> <strong>Minhas contribuições:</strong> 
+                Desenvolvimento completo backend e frontend, garantindo integração entre interface e banco de dados
+Implementação de <strong>CRUD</strong> para gerenciamento de participantes e eventos
+Aplicação de regras de negócio para diferentes perfis de usuários, controlando acesso e permissões</p>
+<p><strong>Tecnologias:</strong>PHP, HTML, CSS, MySQL, PHPMyAdmin</p>
+              <p><strong>Impacto:</strong> Impacto:Automatizou inscrições, permitindo que ONGs gerenciem participantes de forma eficiente, aumentando a participação nos eventos e reduzindo erros manuais.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-pt="Fechar"
+                data-en="Close">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="Modal2-detalhes" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="meuModalLabel"
+                data-pt="Marketing Paths – Plataforma para microempreendedores e pequenas empresas"
+                data-en="Marketing Paths – Platform for micro-entrepreneurs and small businesses">Marketing Paths –
+                Plataforma para microempreendedores e pequenas empresas
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong> Marketing Paths</strong> é uma plataforma acadêmica que auxilia microempreendedores e pequenas empresas a
+                organizar e acompanhar suas ações de marketing, com registro de conteúdos e atividades.</p>
+              <p> <strong>Minhas contribuições:</strong> Desenvolvimento completo backend e frontend, integrando todas as funcionalidades
+                com banco de dados Implementação de <strong>CRUD</strong> para gerenciamento de conteúdos, usuários e campanhas Aplicação
+                de regras de negócio, definindo fluxos distintos para diferentes tipos de usuários Desenvolvimento,
+                manutenção e programação de banco de dados via  PHPMyAdmin Integração com bibliotecas externas e
+                JavaScript, garantindo funcionalidade dinâmica Sistema responsivo para diferentes dispositivos
+                Implementação de validação de dados e autenticação básica</p>
+                <p> <strong>Tecnologias:</strong> PHP, PHPMyAdmin, HTML, CSS,
+                JavaScript, MySQL</p>
+        
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-pt="Fechar"
+                data-en="Close">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <!-- JS do Bootstrap (bundle inclui Popper) -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
