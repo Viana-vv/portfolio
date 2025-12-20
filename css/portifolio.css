@@ -399,6 +399,11 @@ article.habilidade {
 }
 /* ===== Mobile ===== */
 @media (max-width: 1000px) {
+
+.cursor-glow{
+  display: none;
+}
+
 .modal-body p {
    text-indent: 30px;
   font-style: normal;
