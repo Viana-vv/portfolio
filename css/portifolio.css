@@ -399,7 +399,11 @@ article.habilidade {
 }
 /* ===== Mobile ===== */
 @media (max-width: 1000px) {
-
+.modal-body p {
+   text-indent: 30px;
+  font-style: normal;
+  font-size: 15px;
+}
   .menu-links {
     margin-left: auto;
     color: rgb(255, 255, 255);
@@ -798,4 +802,5 @@ body.light .tech:active {
   .modal-title {
     font-size: 2vw;
   }
+ 
 }
