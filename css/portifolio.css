@@ -498,7 +498,14 @@ article.habilidade {
 
 /* ===== Mobile ===== */
 @media (max-width: 1000px) {
+ .modal-content-links p {
+    font-size: 0.8rem;
+ }
 
+
+  .buttonlink {
+  font-size: 0.8rem;
+  }
   .cta-container h2 {
     font-size: 1.8rem;
   }
