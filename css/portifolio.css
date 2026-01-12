@@ -450,7 +450,10 @@ article.habilidade {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: fadeIn 1.0s ease;
   }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
   .modal-content-links {
     background: #ffffff;
     padding: 20px;
