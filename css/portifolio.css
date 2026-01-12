@@ -397,6 +397,59 @@ article.habilidade {
   font-style: normal;
   font-size: 1vw;
 }
+
+.cta-agendamento {
+  padding: 80px 20px;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-container h2 {
+   color: rgb(136, 93, 245);
+  font-family: "Bungee", sans-serif;
+    font-size: 3vw;
+  margin-bottom: 20px;
+}
+
+.cta-container p {
+  color: #ffffff;
+    font-size: 2vw;
+  max-width: 700px;
+  margin: 0 auto 35px;
+  line-height: 1.6;
+}
+
+.cta-botao {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000;
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1vw;
+}
+
+.cta-botao:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cta-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-container p {
+    font-size: 1rem;
+  }
+}
 /* ===== Mobile ===== */
 @media (max-width: 1000px) {
 
@@ -723,7 +776,15 @@ body.light .tech:active {
   border-color: rgb(208, 150, 255);
   color: rgb(0, 0, 0);
 }
+body.light .cta-botao {
+  background-color: #000000;
+  color: #ffffff;
+}
 
+body.light .cta-botao:hover {
+  background-color: #7300ff;
+  color: #ffffff;
+}
 
 @media(min-width:3000px) {
   h1 {
@@ -803,5 +864,12 @@ body.light .tech:active {
   .modal-title {
     font-size: 2vw;
   }
- 
+ .cta-container h2 {
+    font-size: 2vw;
+ }
+
+.cta-container p {
+
+    font-size: 1vw;
+}
 }
