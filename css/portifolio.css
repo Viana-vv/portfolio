@@ -449,7 +449,10 @@ article.habilidade {
   }
 
   .cta-container p {
-    font-size: 10px !important;
+      font-size: 0.9rem;
+  }
+  .cta-botao {
+      font-size: 0.9rem;
   }
 
 .modal-body p {
