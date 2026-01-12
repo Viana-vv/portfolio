@@ -344,8 +344,8 @@ article.habilidade {
 }
 
 .tecnologias-local img {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
 }
 
 .col {
@@ -400,9 +400,7 @@ article.habilidade {
 /* ===== Mobile ===== */
 @media (max-width: 1000px) {
 
-.cursor-glow{
-  display: none;
-}
+
 
 .modal-body p {
    text-indent: 30px;
@@ -459,9 +457,7 @@ article.habilidade {
   }
 
 
-  .cursor-glow {
-    overflow: hidden;
-  }
+ 
 
   .projeto,
   article.projeto {
