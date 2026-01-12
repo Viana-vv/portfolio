@@ -22,21 +22,35 @@
           light.style.left = e.clientX + "px";
           light.style.top = e.clientY + "px";
         });
-
-        document.addEventListener("DOMContentLoaded", () => {
-    const linksNovaAba = document.querySelectorAll('a[target="_blank"]');
-
-    linksNovaAba.forEach(link => {
-      link.addEventListener("click", function (event) {
-        const confirmar = confirm("Este link será aberto em uma nova aba. Deseja continuar?");
         
-        if (!confirmar) {
-          event.preventDefault();
-        }
-      });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const linksNovaAba = document.querySelectorAll('a[target="_blank"]');
+  const modal = document.getElementById("modal");
+  const confirmarBtn = document.getElementById("confirmar");
+  const cancelarBtn = document.getElementById("cancelar");
+
+  let linkDestino = null;
+
+  linksNovaAba.forEach(link => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault(); // bloqueia o clique inicial
+      linkDestino = this.href; // guarda o destino
+      modal.style.display = "flex"; // mostra o modal
     });
   });
 
+  confirmarBtn.addEventListener("click", () => {
+    window.open(linkDestino, "_blank"); // abre em nova aba
+    modal.style.display = "none";
+  });
+
+  cancelarBtn.addEventListener("click", () => {
+    modal.style.display = "none"; // fecha sem abrir
+    linkDestino = null;
+  });
+});
+   
 
 const elementos = document.querySelectorAll('.scroll-ativo');
 
