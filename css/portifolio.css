@@ -440,8 +440,10 @@ article.habilidade {
   color: #ffffff;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+
+/* ===== Mobile ===== */
+@media (max-width: 1000px) {
+
   .cta-container h2 {
     font-size: 1.8rem;
   }
@@ -449,11 +451,6 @@ article.habilidade {
   .cta-container p {
     font-size: 1rem;
   }
-}
-/* ===== Mobile ===== */
-@media (max-width: 1000px) {
-
-
 
 .modal-body p {
    text-indent: 30px;
