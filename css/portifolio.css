@@ -499,7 +499,7 @@ article.habilidade {
 /* ===== Mobile ===== */
 @media (max-width: 1000px) {
  .modal-content-links p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
  }
 
 
