@@ -84,3 +84,24 @@ function openMenu() {
       }
     });
   });
+
+  const form = document.getElementById('contact-form');
+  const thankYou = document.getElementById('thank-you');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form)
+    }).then(response => {
+      if (response.ok) {
+        form.style.display = 'none';
+        thankYou.style.display = 'block';
+      } else {
+        alert("Erro ao enviar. Tente novamente.");
+      }
+    }).catch(error => {
+      alert("Erro de conexão. Tente novamente.");
+    });
+  });
+
