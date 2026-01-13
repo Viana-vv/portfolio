@@ -85,23 +85,29 @@ function openMenu() {
     });
   });
 
-  const form = document.getElementById('contact-form');
-  const thankYou = document.getElementById('thank-you');
+const form = document.getElementById('contact-form');
+const thankYou = document.getElementById('thank-you');
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    fetch(form.action, {
-      method: form.method,
-      body: new FormData(form)
-    }).then(response => {
-      if (response.ok) {
-        form.style.display = 'none';
-        thankYou.style.display = 'block';
-      } else {
-        alert("Erro ao enviar. Tente novamente.");
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
       }
-    }).catch(error => {
-      alert("Erro de conexão. Tente novamente.");
     });
-  });
 
+    if (res.ok) {
+      form.reset();
+      form.style.display = 'none';
+      thankYou.style.display = 'block';
+    } else {
+      alert('Erro ao enviar. Tente novamente.');
+    }
+  } catch (error) {
+    alert('Erro de conexão. Tente novamente.');
+  }
+});

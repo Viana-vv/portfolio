@@ -375,28 +375,42 @@
       <img src="img/img/icone.jpg" alt="Logo do site">
     </div>
   </div>
-
-  <!-- Lado direito: formulário -->
+ <!-- Lado direito: formulário -->
   <div class="contact-right">
-    <form class="contact-form" action="https://formsubmit.co/andrevinicios2008@gmail.com" method="POST">
+
+    <form id="contact-form"
+          class="contact-form"
+          action="https://formsubmit.co/andrevinicios2008@gmail.com"
+          method="POST">
+
       <h1 data-pt="Enviar por email" data-en="Send by email">Enviar por email</h1>
 
-      <label for="name" data-pt="Nome" data-en="Name">Nome</label>
+      <label for="name">Nome</label>
       <input type="text" id="name" name="name" required>
 
-      <label for="email" data-pt="Email" data-en="Email">Email</label>
+      <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="message" data-pt="Mensagem" data-en="Message">Mensagem</label>
+      <label for="message">Mensagem</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
+      <!-- CONFIGURAÇÕES DO FORMSUBMIT -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Nova mensagem do site">
+      <input type="hidden" name="_template" value="table">
 
-      <button type="submit" class="send-btn" data-pt="Enviar" data-en="Send">Enviar</button>
+      <button type="submit" class="send-btn">Enviar</button>
     </form>
+
+    <!-- Mensagem de sucesso -->
+    <p id="thank-you"
+       style="display:none; color:white; font-weight:bold; margin-top:20px;">
+      Obrigado! Sua mensagem foi enviada com sucesso.
+    </p>
+
   </div>
 </section>
 
-<!-- Mensagem de confirmação escondida --> <p id="thank-you" style="display:none; color:rgb(255, 255, 255); font-weight:bold;"> Obrigado! Sua mensagem foi enviada com sucesso. </p>
 
 <footer class="site-footer">
   <div class="footer-container">
