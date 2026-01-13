@@ -521,7 +521,6 @@ article.habilidade {
 .contact-left h1 {
     font-size: 2.5vw;
     margin-bottom: 2vw;
-    color: #ffffff;
       color: rgb(136, 93, 245);
     font-family: "Bungee", sans-serif;
     font-style: normal;
@@ -991,7 +990,7 @@ display:none; color:white; font-weight:bold; margin-top:20px;
 
     .contact-left h1 {
       text-align: center;
-        font-size: 6vw;
+        font-size: 2rem;
         text-align: center;
     }
 
