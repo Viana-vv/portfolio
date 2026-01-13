@@ -759,7 +759,13 @@ text-align: center;
 .thank-yo{
 display:none; color:white; font-weight:bold; margin-top:20px;
 }
+.txtname{
 
+    color: rgb(136, 93, 245);
+    font-size: 3vw;
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+}
 /* ===== Mobile ===== */
 @media (max-width: 1000px) {
  .modal-content-links p {
@@ -1041,13 +1047,13 @@ padding: 5px;
     }
      body.light .contact-form label {
     margin-bottom: 0.5vw;
-    font-size: clamp(1rem, 4vw, 1.3rem);
+    font-size: clamp(1rem, 0.9rem, 1.3rem);
     color: #000000;
     
 }
 
 body.light .send-btn {
-    font-size: clamp(1rem, 4vw, 1.3rem);
+  font-size:   clamp(1rem, 0.9rem, 1.3rem);
 }
 }
 
