@@ -4,7 +4,7 @@
           const isLight = document.body.classList.toggle("light");
           btn.textContent = isLight ? "☀️" : "🌙";
         });
-
+      
         const btnLang = document.getElementById("toggleLang");
         let lang = "pt";
         btnLang.addEventListener("click", () => {
@@ -14,7 +14,8 @@
             el.textContent = el.dataset[lang];
           });
         });
-     
+        
+       
         const light = document.createElement("div");
         light.classList.add("cursor-light");
         document.body.appendChild(light);
