@@ -1169,30 +1169,13 @@ body.light .contact-form h1 {
 }
 
  body.light .contact-form label {
-    margin-bottom: 0.5vw;
-    font-size: 1.2vw;
     color: #000000;
-    
 }
 
- body.light .contact-form input,
-body.light .contact-form textarea {
-    margin-bottom: 1.5vw;
-    padding: 10px;
-    font-size: 1vw;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-}
 
 body.light .send-btn {
     background-color: rgb(111, 65, 227);
     color: #fff;
-    border: none;
-    padding: 12px;
-    font-size: 1.2vw;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 body.light .send-btn:hover {
