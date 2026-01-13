@@ -1011,12 +1011,12 @@ padding: 5px;
 }
     .contact-form input,
     .contact-form textarea {
-        font-size: 3.5vw;
+        font-size: 1rem;
         padding: 10px;
     }
 
     .send-btn {
-        font-size: 4vw;
+        font-size: 0.9rem;
         padding: 10px;
     }
        .footer-container {
@@ -1134,7 +1134,7 @@ body.light .link-text:hover{
 body.light .contact-item a {
     text-decoration: none;
     font-size: 1.2vw;
-    color: #ffffff;
+    color: #000000;
     transition: color 0.3s;
 }
 
