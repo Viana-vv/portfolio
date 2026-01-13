@@ -1039,6 +1039,18 @@ padding: 5px;
     .footer-container {
         justify-content: flex-start;
     }
+     body.light .contact-form label {
+    margin-bottom: 0.5vw;
+    font-size: 0.9rem;
+    color: #000000;
+    
+}
+
+body.light .send-btn {
+ 
+    font-size: 0.9rem;
+
+}
 }
 
 span {
@@ -1124,7 +1136,7 @@ body.light .link-text:hover{
 body.light .contact-item a {
     text-decoration: none;
     font-size: 1.2vw;
-    color: #000000;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
