@@ -111,3 +111,12 @@ form.addEventListener('submit', async (e) => {
     alert('Erro de conexão. Tente novamente.');
   }
 });
+const buttons = document.querySelectorAll('.buttonHead');
+
+function changeLanguage(lang) {
+  buttons.forEach(button => {
+    const text = lang === 'pt' ? button.dataset.pt : button.dataset.en;
+    // Mantendo o ícone
+    button.querySelector('i').nextSibling.textContent = ' ' + text;
+  });
+}
