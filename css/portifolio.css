@@ -3,6 +3,15 @@ body {
   color: rgb(255, 255, 255);
   transition: background-color 1.0s ease, color 0.4s ease;
 }
+.bg {
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
+  background-color: transparent; /* opcional */
+}
+
 
 p {
   margin-bottom: 0rem;
@@ -1117,6 +1126,24 @@ article.habilidade {
   body.light .send-btn {
     font-size: clamp(1rem, 0.9rem, 1.3rem);
   }
+  .bg {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
+  background-color: transparent; /* opcional */
+}
+
+  body.light .bg {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/shika.gif") center / cover no-repeat;
+  background-color: transparent; /* opcional */
+}
+
 }
 
 span {
@@ -1145,6 +1172,14 @@ body.light {
   background-color: #ffffff;
   color: #000000;
   transition: background-color 1.0s ease, color 0.4s ease;
+}
+body.light .bg {
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/shika.gif") center / cover no-repeat;
+  background-color: transparent; /* opcional */
 }
 
 
