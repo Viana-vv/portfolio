@@ -1161,7 +1161,7 @@ span {
 }
 
 /* ===== Cursor highlight ===== */
-.cursor-light {
+/*.cursor-light {
   position: fixed;
   width: 1000px;
   height: 1000px;
@@ -1184,9 +1184,8 @@ body.light {
   transition: background-color 1.0s ease, color 0.4s ease;
 }
 body.light .bg {
-  width: 300px;
+  width: 450px;
   height: 400px;
-  overflow: hidden;
   display: flex;
   background: url("../animacao/shika.gif") center / cover no-repeat;
   background-color: transparent; /* opcional */
