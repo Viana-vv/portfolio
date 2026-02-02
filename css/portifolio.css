@@ -1147,7 +1147,7 @@ article.habilidade {
 
   body.light .bg {
   width: 300px !important;
-  height: 400px !important;
+  height: 300px !important;
   overflow: hidden;
   display: flex;
   background: url("../animacao/shika.gif") center / cover no-repeat;
