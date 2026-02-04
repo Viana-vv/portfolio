@@ -1150,7 +1150,7 @@ article.habilidade {
   height: 300px !important;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/shika.gif") center / cover no-repeat;
+  background: url("../animacao/shika.gif") center  / cover no-repeat;
   background-color: transparent; /* opcional */
 }
 
