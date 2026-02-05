@@ -3,25 +3,6 @@ body {
   color: rgb(255, 255, 255);
   transition: background-color 1.0s ease, color 0.4s ease;
 }
-.bg {
-  width: 300px;
-  height: 400px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
-  background-color: transparent; /* opcional */
-}
-.animbg {
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/hishika.gif") center / cover no-repeat;
-  background-color: transparent; /* opcional */
-     transition: background-color 1.0s ease, color 0.4s ease;
-}
-
 
 p {
   margin-bottom: 0rem;
@@ -837,10 +818,78 @@ article.habilidade {
   font-family: "Bungee", sans-serif;
   font-style: normal;
 }
+.bg {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
+  background-color: transparent; /* opcional */
+}
+.animbg {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/hishika.gif") center / cover no-repeat;
+  background-color: transparent; /* opcional */
+     transition: background-color 1.0s ease, color 0.4s ease;
+}
+.tecImg{
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+.tectxt{
+   font-size: 0.95rem;
+  color: rgb(136, 93, 245);
+
+  font-family: "Titan One", sans-serif;
+  font-style: normal;
+}
+
+.tecnusing{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.tecnusing-container{
+  padding: 10px;
+}
 
 /* ===== Mobile ===== */
 /*Mobile e tablets ficam melhores assim*/
 @media (max-width: 1000px) {
+  
+.tecnusing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.tecnusing-container{
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+  border: 3px #000000 solid;
+  border-radius: 15px;
+}
+  body.light .tecnusing-container{
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+  border: 3px #b78aff solid;
+  border-radius: 15px;
+}
+
   .modal-content-links p {
     font-size: 0.9rem;
   }
@@ -1622,5 +1671,38 @@ body.light .animbg {
   background-color: transparent; /* opcional */
      transition: background-color 1.0s ease, color 0.4s ease;
 }
+.bg {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
+  background-color: transparent; /* opcional */
+}
+.animbg {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/hishika.gif") center / cover no-repeat;
+  background-color: transparent; /* opcional */
+     transition: background-color 1.0s ease, color 0.4s ease;
+}
+.tecImg{
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+}
+.tectxt{
+   font-size: 1.5vw;
+  margin-bottom: 10px;
+  color: rgb(136, 93, 245);
+  font-family: "Titan One", sans-serif;
+  font-style: normal;
+}
 
+.tecnusing-container{
+  padding: 100px;
+}
 }
