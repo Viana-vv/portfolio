@@ -840,7 +840,14 @@ article.habilidade {
   width: 40px;
   height: 40px;
   color: #ffffff;
+  transition: 0.35s ease-in;
 }
+.tecImg:hover{
+ transform: translateY(10px);
+  width: 40px;
+  height: 40px;
+}
+
 .tectxt{
    font-size: 0.95rem;
   color: rgb(136, 93, 245);
@@ -1680,8 +1687,8 @@ body.light .animbg {
 }
 .animbg {
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   display: flex;
   background: url("../animacao/hishika.gif") center / cover no-repeat;
@@ -1692,7 +1699,14 @@ body.light .animbg {
   width: 80px;
   height: 80px;
   color: #ffffff;
+  transition: 0.35s ease-in;
 }
+.tecImg:hover{
+     width: 80px;
+  height: 80px;
+  transform: translateY(20px);
+}
+
 .tectxt{
    font-size: 1.5vw;
   margin-bottom: 10px;
@@ -1704,4 +1718,5 @@ body.light .animbg {
 .tecnusing-container{
   padding: 100px;
 }
+
 }
