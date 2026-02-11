@@ -870,6 +870,20 @@ article.habilidade {
 /* ===== Mobile ===== */
 /*Mobile e tablets ficam melhores assim*/
 @media (max-width: 1000px) {
+.direcaotxthome {
+  display: flex;
+  flex-direction: column;
+margin-left: 0rem;
+}
+
+.direcaotxthome {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+  
    .buttonHead {
     width: 90%;
     background-color: rgb(0, 0, 0);
