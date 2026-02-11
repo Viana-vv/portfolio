@@ -870,7 +870,25 @@ article.habilidade {
 /* ===== Mobile ===== */
 /*Mobile e tablets ficam melhores assim*/
 @media (max-width: 1000px) {
-  
+   .buttonHead {
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+  color:rgb(136, 93, 245);
+  border-radius: 25px;
+   padding: 10px;   
+   border-color: #a984ff;
+     transition: background-color 1.0s ease, color 0.4s ease;
+}
+
+.buttonHead:hover,
+.buttonHead:focus,
+.buttonHead:active {
+    margin-top: 0.9rem;
+    color: #ffffff;
+  background-color: rgb(136, 93, 245);
+    transition: background-color 1.0s ease, color 0.4s ease;
+}
+
 .tecnusing{
   display: flex;
   flex-direction: column;
