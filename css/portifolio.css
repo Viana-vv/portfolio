@@ -496,7 +496,6 @@ article.habilidade {
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-
 }
 
 .modal-content-links p {
@@ -508,9 +507,8 @@ article.habilidade {
 }
 
 .modal-content-links img {
-  width: 100px !important;
-  height: 100px !important;
-  border-radius: 50%;
+  width: 200px !important;
+  height: 200px !important;
   color: rgb(136, 93, 245);
   font-size: 20px;
   font-family: "Bungee", sans-serif;
@@ -866,10 +864,15 @@ article.habilidade {
 .tecnusing-container{
   padding: 10px;
 }
-
+.directionModal{
+display: flex; flex-direction: row; justify-content: center; align-items: center;
+}
 /* ===== Mobile ===== */
 /*Mobile e tablets ficam melhores assim*/
 @media (max-width: 1000px) {
+  .directionModal{
+display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
 .direcaotxthome {
   display: flex;
   flex-direction: column;
@@ -931,7 +934,14 @@ margin-left: 0rem;
   .modal-content-links p {
     font-size: 0.9rem;
   }
-
+.modal-content-links img {
+  width: 200px !important;
+  height: 150px !important;
+  color: rgb(136, 93, 245);
+  font-size: 20px;
+  font-family: "Bungee", sans-serif;
+  font-style: normal;
+}
 
   .buttonlink {
     font-size: 0.8rem;
@@ -1649,8 +1659,8 @@ body.light .animbg {
   }
 
   .modal-content-links img {
-    width: 300px !important;
-    height: 300px !important;
+    width: 500px !important;
+    height: 400px !important;
     border-radius: 50%;
     color: rgb(136, 93, 245);
     font-size: 2vw;
