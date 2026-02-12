@@ -874,6 +874,7 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
 display: flex; flex-direction: column; justify-content: center; align-items: center;
 }
 .direcaotxthome {
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
 margin-left: 0rem;
@@ -1025,9 +1026,8 @@ margin-left: 0rem;
   }
 
   .box-head {
-  
     height: auto;
-    margin-bottom: 5vh;
+    margin-bottom: 0vh;
     border-bottom: #a984ff solid 0.4vh;
   }
 
@@ -1088,7 +1088,7 @@ margin-left: 0rem;
     height: auto;
     background-color: black;
     flex-direction: column;
-    margin-top: 12vh;
+    margin-top: 3vh;
   }
 
   .tecnologias-local p {
