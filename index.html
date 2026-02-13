@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">-->
   <link rel="stylesheet" href="css/portifolio.css">
   <link rel="icon" href="img/img/icone.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,7 +86,7 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
 
 
   <div class="home">
-    <div><img class="ImagemPrincipal" src="img/img/minhaImagem.jpeg" alt="MinhaFoto"></div>
+    <div><img class="ImagemPrincipal" src="img/img/minhaImagem.jpeg" alt="MinhaFoto" fetchpriority="high"></div>
     <div class="direcaotxthome">
       <section id="Inicio">
         <h1 data-pt="Olá, eu sou André" data-en="Hello, I'm André">Olá, eu sou André</h1>
@@ -323,43 +323,51 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
 <div class="tecnusing">
 <div class="tecnusing-container">
  <h1 class="tectxt">Front-End</h1>
-              <img class="tecImg"
+              <img
+              alt="Imagem do icone html" 
+              class="tecImg"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-              <img class="tecImg"
+              <img 
+              alt="Imagem do icone CSS"
+              class="tecImg"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-              <img class="tecImg"
+              <img 
+              alt="imagem do icone javascript"
+              class="tecImg"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
 
 </div>
 <div  class="tecnusing-container">
    <h1 class="tectxt">Back-End</h1>
-              <img class="tecImg"
+              <img 
+              alt="imagem do icone PHP"
+              class="tecImg"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-              <img class="tecImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+              <img alt="imagem do icone java" class="tecImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
          
 </div>
 <div  class="tecnusing-container">
       <h1 class="tectxt" data-pt="Banco de dados " data-en="database">Banco de dados</h1>
-              <img class="tecImg"
+              <img alt="imagem do icone mysql" class="tecImg"
                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
        
 </div>
 <div  class="tecnusing-container">
          <h1 class="tectxt" data-pt="Bibliotecas" data-en="library">Bibliotecas</h1>
-            <img class="tecImg"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-          <img src="img/img/lwind.png" alt="imagem ligthswind.ui" class="tecImg"> 
+            <img alt="imagem do icone do Bootstrap" class="tecImg"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+          <img  src="img/img/lwind.png" alt="imagem ligthswind.ui" class="tecImg"> 
         <img src="img/img/reactbits.png" alt="imagem react bits" class="tecImg">  
    
 </div>
 <div  class="tecnusing-container">
      <h1 class="tectxt" data-pt="Fontes" data-en="sources">Fontes</h1>
-              <img class="tecImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" />
+              <img alt="Imagem do icone do google" class="tecImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" />
          
 </div>
 <div  class="tecnusing-container">
      <h1 class="tectxt" data-pt="Ferramentas" data-en="tools">Ferramentas</h1>
             <img class="tecImg" alt="Imagem intellij" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
-            <img  class="tecImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+            <img alt="Imagem de icone do vscode" class="tecImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
           <img src="img/img/phpmyadmin.png" alt="imagem phpmyadmin" class="tecImg">
             <img class="tecImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Imagem git" /> 
                
@@ -420,28 +428,28 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
 
             <div class="contact-links">
               <div class="contact-item">
-                <a href="https://wa.me/5511945931935" target="_blank">
+                <a aria-label="link para WhatsApp" href="https://wa.me/5511945931935" target="_blank">
                   <i class="bi bi-whatsapp"></i>
                   <span class="link-text" data-pt="Whatsapp" data-en="WhatsApp">Whatsapp</span>
                 </a>
               </div>
 
               <div class="contact-item">
-                <a href="https://www.instagram.com/eeai.viana" target="_blank">
+                <a aria-label="Link para instagram" href="https://www.instagram.com/eeai.viana" target="_blank">
                   <i class="bi bi-instagram"></i>
                   <span class="link-text" data-pt="Instagram" data-en="Instagram">Instagram</span>
                 </a>
               </div>
 
               <div class="contact-item">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andrevinicios2008@gmail.com">
+                <a aria-label="link para email" href="https://mail.google.com/mail/?view=cm&fs=1&to=andrevinicios2008@gmail.com">
                   <i class="bi bi-envelope-at"></i>
                   <span class="link-text" data-pt="Email" data-en="Email">Email</span>
                 </a>
               </div>
 
               <div class="contact-item">
-                <a href="https://www.linkedin.com/in/andr%C3%A9-viniciosvian4/" target="_blank">
+                <a aria-label="link para linkedin" href="https://www.linkedin.com/in/andr%C3%A9-viniciosvian4/" target="_blank">
                   <i class="bi bi-linkedin"></i>
                   <span class="link-text" data-pt="LinkedIn" data-en="LinkedIn">LinkedIn</span>
                 </a>
