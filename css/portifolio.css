@@ -821,7 +821,7 @@ article.habilidade {
   height: 400px;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
+  background: url("../animacao/shikamodblack.gif") center / cover no-repeat ;
   background-color: transparent; /* opcional */
 }
 .animbg {
