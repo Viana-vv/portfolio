@@ -356,22 +356,22 @@ article.habilidade {
   line-height: 1.5;
 }
 
-.tecnologias-local {
+/*.tecnologias-local {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-}
+}*/
 
-.tecnologias-local p {
+/*.tecnologias-local p {
   font-size: 1vw;
-}
+}*/
 
-.tecnologias-local img {
+/*.tecnologias-local img {
   width: 100px;
   height: 100px;
-}
+}*/
 
 .col {
   background-color: #161b22;
