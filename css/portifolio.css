@@ -508,7 +508,7 @@ article.habilidade {
 
 .modal-content-links img {
   width: 200px !important;
-  height: 200px !important;
+  height: 150px !important;
   color: rgb(136, 93, 245);
   font-size: 20px;
   font-family: "Bungee", sans-serif;
@@ -1652,7 +1652,7 @@ body.light .animbg {
 
   .modal-content-links p {
     color: rgb(0, 0, 0);
-    font-size: 2vw;
+    font-size: 1vw;
     font-family: "Bungee", sans-serif;
     font-style: normal;
     padding: 1vw;
