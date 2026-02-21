@@ -121,14 +121,14 @@ function changeLanguage(lang) {
   });
 }
 window.addEventListener("load", function () {
+  const loading = document.getElementById("loading");
+  const content = document.getElementById("content");
+
+  loading.style.opacity = "0";
+
   setTimeout(function () {
-    document.getElementById("loading").classList.add("hidden");
-
-    const content = document.getElementById("content");
+    loading.style.display = "none";
     content.style.display = "block";
-
-    setTimeout(function () {
-      content.classList.add("show");
-    }, 10);
-  }, 2000);
+    content.classList.add("show");
+  }, 400); // tempo igual ao transition do CSS
 });
