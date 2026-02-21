@@ -7,7 +7,7 @@ body {
   #loading {
     position: fixed;
     inset: 0;
-    background: #111;
+    background: #000000;
      color: rgb(136, 93, 245);
   font-family: "Titan One", sans-serif;
   font-style: normal;
@@ -24,7 +24,7 @@ body {
   height: 300px;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/VID-20260221-WA0077.gif") center / cover no-repeat ;
+  background: url("../animacao/loading.gif") center / cover no-repeat ;
   background-color: transparent; /* opcional */
 }
   #loading.hidden {
@@ -1760,7 +1760,7 @@ body.light .animbg {
   background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
   background-color: transparent; /* opcional */
 }
-
+/*
 .animbg {
   border-radius: 50%;
   width: 200px;
@@ -1768,8 +1768,8 @@ body.light .animbg {
   overflow: hidden;
   display: flex;
   background: url("../animacao/hishika.gif") center / cover no-repeat;
-  background-color: transparent; /* opcional */
-}
+  background-color: transparent;
+}*/
 body.light .animbg {
  border-radius: 50%;
   width: 200px;
@@ -1787,7 +1787,7 @@ body.light .animbg {
   display: flex;
   background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
   background-color: transparent; /* opcional */
-}
+}/*
 .animbg {
   border-radius: 50%;
   width: 200px;
@@ -1795,9 +1795,9 @@ body.light .animbg {
   overflow: hidden;
   display: flex;
   background: url("../animacao/hishika.gif") center / cover no-repeat;
-  background-color: transparent; /* opcional */
+  background-color: transparent; 
      transition: background-color 1.0s ease, color 0.4s ease;
-}
+}*/
 .tecImg{
   width: 80px;
   height: 80px;
@@ -1827,7 +1827,7 @@ body.light .animbg {
   height: 600px;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/VID-20260221-WA0077.gif") center / cover no-repeat ;
+  background: url("../animacao/loading.gif") center / cover no-repeat ;
   background-color: transparent; /* opcional */
 }
 }
