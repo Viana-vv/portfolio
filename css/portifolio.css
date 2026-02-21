@@ -1260,7 +1260,7 @@ margin-left: 0rem;
   }
 
   .footer-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     text-align: center;
     gap: 1.5rem;
@@ -1311,6 +1311,9 @@ margin-left: 0rem;
   color: #cec9d9;
   font-size: 0.8rem;
   line-height: 1.5;
+}.btn {
+  color: #ffffff;
+  font-size: clamp(1rem, 0.9rem, 1.3rem);
 }
 
 }
