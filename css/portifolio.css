@@ -4,6 +4,43 @@ body {
   transition: background-color 1.0s ease, color 0.4s ease;
 }
 
+  #loading {
+    position: fixed;
+    inset: 0;
+    background: #111;
+     color: rgb(136, 93, 245);
+  font-family: "Titan One", sans-serif;
+  font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease;
+    z-index: 9999;
+  }
+#loading .loadbg{
+    background-blend-mode: multiply;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/VID-20260221-WA0077.gif") center / cover no-repeat ;
+  background-color: transparent; /* opcional */
+}
+  #loading.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #content {
+     display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  }
+  #content.show {
+  opacity: 1;
+}
+
 p {
   margin-bottom: 0rem;
 }
@@ -129,7 +166,7 @@ li {
 a {
   text-decoration: none;
   color: aliceblue;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 a:hover,
@@ -211,7 +248,7 @@ section {
 }
 
 .projeto-titulo {
-  font-size: 2rem;
+  font-size: 2vw;
   color: rgb(136, 93, 245);
   margin-bottom: 10px;
   font-family: "Titan One", sans-serif;
@@ -220,7 +257,7 @@ section {
 
 .projeto-descricao {
   color: #cec9d9;
-  font-size: 0.95rem;
+  font-size: 1vw;
   line-height: 1.5;
 }
 
@@ -259,7 +296,7 @@ section {
     background-color: rgb(0, 0, 0);
   margin-top: 1rem;
   color:rgb(136, 93, 245);
-  border-radius: 10%;
+  border-radius: 5%;
    padding: 12px;
   
    
@@ -278,6 +315,7 @@ section {
 
 .btn {
   color: #ffffff;
+  font-size: 1vw;
 }
 
 .btn:hover,
@@ -555,7 +593,7 @@ article.habilidade {
 }
 
 .contact-left h1 {
-  font-size: 2.5vw;
+  font-size: 2.0vw;
   margin-bottom: 2vw;
   color: rgb(136, 93, 245);
   font-family: "Bungee", sans-serif;
@@ -643,6 +681,8 @@ article.habilidade {
   color: rgb(136, 93, 245);
   font-family: "Bungee", sans-serif;
   font-style: normal;
+  font-size: 2vw;
+  margin-bottom: 1vw;
 }
 
 .contact-form label {
@@ -817,8 +857,9 @@ article.habilidade {
   font-style: normal;
 }
 .bg {
+  background-blend-mode: multiply;
   width: 300px;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   display: flex;
   background: url("../animacao/shikamodblack.gif") center / cover no-repeat ;
@@ -870,6 +911,21 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
 /* ===== Mobile ===== */
 /*Mobile e tablets ficam melhores assim*/
 @media (max-width: 1000px) {
+  .projeto-titulo {
+  font-size: 1.2rem;
+  color: rgb(136, 93, 245);
+  margin-bottom: 10px;
+  font-family: "Titan One", sans-serif;
+  font-style: normal;
+}
+
+  .contact-form h1 {
+  color: rgb(136, 93, 245);
+  font-family: "Bungee", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  margin-bottom: 1vw;
+}
   .directionModal{
 display: flex; flex-direction: column; justify-content: center; align-items: center;
 }
@@ -1250,6 +1306,11 @@ margin-left: 0rem;
   display: flex;
   background: url("../animacao/shika.gif") center  / cover no-repeat;
   background-color: transparent; /* opcional */
+}
+.projeto-descricao {
+  color: #cec9d9;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 }
@@ -1760,5 +1821,13 @@ body.light .animbg {
 .tecnusing-container{
   padding: 100px;
 }
-
+#loading .loadbg{
+    background-blend-mode: multiply;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  background: url("../animacao/VID-20260221-WA0077.gif") center / cover no-repeat ;
+  background-color: transparent; /* opcional */
+}
 }

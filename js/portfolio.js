@@ -120,3 +120,15 @@ function changeLanguage(lang) {
     button.querySelector('i').nextSibling.textContent = ' ' + text;
   });
 }
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    document.getElementById("loading").classList.add("hidden");
+
+    const content = document.getElementById("content");
+    content.style.display = "block";
+
+    setTimeout(function () {
+      content.classList.add("show");
+    }, 10);
+  }, 2000);
+});

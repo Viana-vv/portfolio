@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VIANA.DEV</title>
+  <title>Viana.Dev</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/portifolio.css">
-  <link rel="icon" href="img/img/icone.jpg">
+  <link rel="icon" href="img/img/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Bungee&family=Coiny&family=Montez&display=swap" rel="stylesheet">
@@ -19,6 +19,13 @@
 </head>
 
 <body>
+  <div id="loading">
+ <div aria-label="Imagem de Carregamento" class="loadbg"></div>
+<p aria-label="texto de carregamento">Carregando...</p>
+</div>
+<div id="content">
+
+
   <header class="box-head" role="banner">
 
     <div class="header-mobile">
@@ -490,7 +497,7 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
             </div>
 
             <div class="contact-logo">
-              <img src="img/img/icone.jpg" alt="Logo do site">
+              <img src="img/img/icon.png" alt="Logo do site">
 
             </div>
 
@@ -501,16 +508,16 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
             <form id="contact-form" class="contact-form" action="https://formsubmit.co/andrevinicios2008@gmail.com"
               method="POST">
 
-              <h1 data-pt="Enviar por email" data-en="Send by email">Enviar por email</h1>
+              <h1 data-pt="Enviar por email" data-en="Send by email">Enviar por email:</h1>
 
               <label data-pt="Nome" data-en="Name" for="name">Nome</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" id="name" name="name" required placeholder="Digite seu nome">
 
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" required placeholder="exemplo@gmail.com">
 
               <label data-pt="Mensagem" data-en="Message" for="message">Mensagem</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
+              <textarea id="message" name="message" rows="5" required placeholder="Digite o que deseja aqui"></textarea>
 
               <!-- CONFIGURAÇÕES DO FORMSUBMIT -->
               <input type="hidden" name="_captcha" value="false">
@@ -576,7 +583,7 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
                   </li>
                   <li>
                     <i class="bi bi-linkedin" name="Botão linkedin"></i>
-                    <a href="https://www.linkedin.com/in/andr%C3%A9-viniciosvian4/" target="_blank" data-pt="LinkedIn"
+                    <a href="https://www.linkedin.com/in/andre-viana-dev" target="_blank" data-pt="LinkedIn"
                       data-en="LinkedIn">LinkedIn</a>
                   </li>
                   <li>
@@ -777,6 +784,7 @@ mais
              </div>
              </div>
           </div>
+        </div>
         </div>
         <!-- JS do Bootstrap (bundle inclui Popper) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
