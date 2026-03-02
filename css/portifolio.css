@@ -1235,6 +1235,11 @@ margin-left: 0rem;
     margin-bottom: 0vh;
     border-bottom: #a984ff solid 0.4vh;
   }
+  .formacoes-titulo{
+      font-size: 1.2rem;
+   color: rgb(136, 93, 245);
+  font-family: "Titan One", sans-serif;
+  }
 
   .ImagemPrincipal {
     width: 200px;
