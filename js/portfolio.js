@@ -162,3 +162,39 @@ function showSubCursos(category, btn) {
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.pf-btn').click();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const overlay = document.getElementById('overlay');
+  const link = document.getElementById('linkFormacao');
+
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    overlay.classList.add('active');
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 800);
+  });
+});document.addEventListener('DOMContentLoaded', () => {
+  const overlay = document.getElementById('overlay');
+  const link = document.getElementById('linkFormacao2');
+
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    overlay.classList.add('active');
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 800);
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const overlay = document.getElementById('overlay');
+  const link = document.getElementById('linkFormacao3');
+
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    overlay.classList.add('active');
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 800);
+  });
+});

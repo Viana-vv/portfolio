@@ -3,6 +3,42 @@ body {
   color: rgb(255, 255, 255);
   transition: background-color 1.0s ease, color 0.4s ease;
 }
+#overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  opacity: 0;
+  z-index: 9999;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+#overlay.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+#overlay p{
+      font-size: 2vw;
+    margin-bottom: 20px;
+   color: rgb(136, 93, 245);
+  font-family: "Titan One", sans-serif;
+}
+
+#overlay img {
+  width: 150px;
+  height: 150px;
+  animation: subir 0.6s forwards;
+}
+
+@keyframes subir {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
 .btn-formacao {
     display: inline-block;
     padding: 10px 20px;
@@ -1054,6 +1090,13 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
 /* ===== Mobile ===== */
 /*Mobile e tablets ficam melhores assim*/
 @media (max-width: 1000px) {
+  #overlay p{
+      font-size: 1.2rem;
+    margin-bottom: 20px;
+   color: rgb(136, 93, 245);
+  font-family: "Titan One", sans-serif;
+}
+
    .curso-categorias {
     flex-direction: column;
   }

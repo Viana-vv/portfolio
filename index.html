@@ -71,7 +71,7 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
       <li><a class="menu-links" href="#projetos" data-pt="Projetos" data-en="Projects"
           alt="Botão projetos ">Projetos</a></li>
       <li><a class="menu-links" href="formacao.html" data-pt="Formações" data-en="Formations"
-          alt="Botão link para formações" target="_blank"> Formações </a></li>
+          alt="Botão link para formações"  id="linkFormacao"  > Formações </a></li>
       <li><a class="menu-links" href="#Tecnologias" data-pt="Tecnologias" data-en="Technologies"
           alt="Botão tecnologias ">Tecnologias</a></li>
       <li><a class="menu-links" href="#contato" data-pt="Contato" data-en="Contact" alt="Botão Contatos ">Contato</a>
@@ -293,7 +293,7 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
       >
       <h1 class="formacoes-titulo">Formações Academicas</h1>
 <a href="formacao.html" data-pt="Formações" data-en="Formations"
-          alt="Botão link para formações" target="_blank" class="btn-formacao"><i class="fas fa-graduation-cap"></i> Ver Formação</a>
+ id="linkFormacao2"   alt="Botão link para formações" class="btn-formacao "><i class="fas fa-graduation-cap"></i> Ver Formação</a>
 </div>
 </section>
 
@@ -579,7 +579,7 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
                   <li><a href="#sobre" data-pt="Sobre" data-en="About" aria-label="link sobre">Sobre</a></li>
                   <li><a href="#projetos" data-pt="Projetos" data-en="Projects" aria-label="link proojetos">Projetos</a></li>
                   <li><a href="formacao.html" data-pt="Formações" data-en="Formations"
-          alt="Botão link para formações" target="_blank"> Formações </a></li>
+          alt="Botão link para formações" id="linkFormacao3" > Formações </a></li>
                   <li><a href="#Tecnologias" data-pt="Tecnologias" data-en="Technologies" aria-label="link tecnologias">Tecnologias</a></li>
                   <li><a href="#contato" data-pt="Contatos" data-en="Contacts" aria-label="link contatos">Contatos</a></li>
                 </ul>
@@ -808,6 +808,13 @@ mais
 
         <!--Todo o js está nesse arquivo-->
         <script src="js/portfolio.js" defer></script>
+      <!-- Overlay da animação -->
+<div id="overlay">
+  <div style="display: flex; align-items: center; text-align: center; justify-content: center; flex-direction: column;">
+  <img src="img/img/icon.png" alt="Logo" />
+  <p>Carregando...</p>
+  </div>
+</div>
 </body>
 
 </html>
