@@ -3,6 +3,149 @@ body {
   color: rgb(255, 255, 255);
   transition: background-color 1.0s ease, color 0.4s ease;
 }
+.btn-formacao {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #8000ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.btn-formacao:hover {
+    background: #5e00aa;
+}
+/* Cursos lado a lado */
+.curso-categorias {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.curso-categorias > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.curso-item {
+  background: #1e1e1e;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+/* Botões internos de cursos */
+.curso-buttons {
+  margin-bottom: 15px;
+}
+.curso-buttons button {
+  padding: 6px 12px;
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+  background: #2a2a2a;
+  color: #fff;
+  border-radius: 4px;
+  transition: 0.2s ease-in;
+}
+.curso-buttons button:hover {
+  background: #444;
+}
+.curso-buttons .active {
+  background: #8800ff;
+}
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #5d00ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.btn-voltar:hover {
+    background: #4a00aa;
+}
+#pf-formacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    padding: 40px;
+    background: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.pf-title {
+    font-size: 2vw;
+    margin-bottom: 20px;
+   color: rgb(136, 93, 245);
+  font-family: "Titan One", sans-serif;
+  }
+.formacoes-titulo{
+      font-size: 2vw;
+   color: rgb(136, 93, 245);
+  font-family: "Titan One", sans-serif;
+}
+.pf-buttons {
+    margin-bottom: 25px;
+}
+
+.pf-btn {
+    padding: 8px 18px;
+    margin-right: 8px;
+    border: none;
+    cursor: pointer;
+    background: #2a2a2a;
+    color: #fff;
+    transition: 0.2s;
+    border-radius: 5%;
+     font-size: 2vw;
+}
+/* começa tudo escondido */
+.pf-faculdade,
+.pf-tecnico,
+.pf-curso {
+  display: none;
+}
+
+.curso-col {
+  display: none;
+}
+.pf-btn:hover {
+    background: #444;
+}
+
+.pf-btn-active {
+    background: #6600ff;
+}
+
+.pf-card {
+    display: none;
+    background: #1e1e1e;
+    padding: 1%;
+    margin-bottom: 12px;
+    border-radius: 5%;
+    transition: 0.5ms ease-in;
+}
+.pf-card:hover{
+     background: #393939;
+     border: #6600ff 0.2vw solid;
+}
+
+.pf-card h3 {
+    margin: 0 0 8px 0;
+   font-size: 2vw;
+}
+
+.pf-card p {
+    margin: 2px 0;
+  font-size: 1vw;
+    opacity: 0.9;
+}
 
   #loading {
     position: fixed;
@@ -911,6 +1054,12 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
 /* ===== Mobile ===== */
 /*Mobile e tablets ficam melhores assim*/
 @media (max-width: 1000px) {
+   .curso-categorias {
+    flex-direction: column;
+  }
+  .curso-categorias > div {
+    min-width: 100%;
+  }
   .projeto-titulo {
   font-size: 1.2rem;
   color: rgb(136, 93, 245);
@@ -1315,6 +1464,36 @@ margin-left: 0rem;
   color: #ffffff;
   font-size: clamp(1rem, 0.9rem, 1.3rem);
 }
+    #pf-formacao {
+        padding: 25px 15px;
+    }
+
+    .pf-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .pf-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pf-btn {
+        width: 100%;
+    }
+
+    .pf-card {
+        padding: 15px;
+    }
+
+    .pf-card h3 {
+        font-size: 16px;
+    }
+
+    .pf-card p {
+        font-size: 13px;
+    }
 
 }
 

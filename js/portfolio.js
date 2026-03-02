@@ -132,3 +132,33 @@ window.addEventListener("load", function () {
     content.classList.add("show");
   }, 400); // tempo igual ao transition do CSS
 });
+
+// JS principal para Faculdade/Técnico/Cursos
+function pfFilter(event, type) {
+    const cards = document.querySelectorAll('.pf-card');
+    const buttons = document.querySelectorAll('.pf-btn');
+
+    cards.forEach(card => card.style.display = 'none');
+    buttons.forEach(btn => btn.classList.remove('pf-btn-active'));
+
+    document.querySelectorAll('.' + type)
+        .forEach(card => card.style.display = 'block');
+
+    event.target.classList.add('pf-btn-active');
+}
+
+// JS para subcategorias dentro de Cursos
+function showSubCursos(category, btn) {
+    const allSub = document.querySelectorAll('.sub-curso');
+    allSub.forEach(sc => sc.style.display = 'none');
+
+    const buttons = btn.parentNode.querySelectorAll('button');
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    document.querySelectorAll('.' + category).forEach(sc => sc.style.display = 'block');
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('.pf-btn').click();
+});
