@@ -1256,7 +1256,6 @@ margin-left: 0rem;
   .li-local-img img {
     width: 100px;
     height: 75px;
-    margin-right: 10px;
   }
 
 
@@ -1484,8 +1483,8 @@ margin-left: 0rem;
     font-size: clamp(1rem, 0.9rem, 1.3rem);
   }
   .bg {
-  width: 300px;
-  height: 250px;
+  width: 200px;
+  height: 150px;
   overflow: hidden;
   display: flex;
   background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat;
