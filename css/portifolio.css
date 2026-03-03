@@ -30,7 +30,7 @@ body {
 }
 
 #overlay img {
-  width: 150px;
+  width: 200px;
   height: 150px;
   animation: subir 0.6s forwards;
 }
@@ -200,10 +200,10 @@ body {
 #loading .loadbg{
     background-blend-mode: multiply;
   width: 300px;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/loading.gif") center / cover no-repeat ;
+  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat ;
   background-color: transparent; /* opcional */
 }
   #loading.hidden {
@@ -619,9 +619,8 @@ article.habilidade {
 }
 
 .li-local-img img {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
+  width: 105px;
+  height: 80px;
 }
 
 .header-mobile {
@@ -830,7 +829,6 @@ article.habilidade {
 
 .contact-logo img {
   max-width: 200px;
-  border-radius: 50%;
 }
 
 /* Lado direito */
@@ -1029,21 +1027,21 @@ article.habilidade {
 }
 
 .txtname {
-
   color: rgb(136, 93, 245);
   font-size: 3vw;
   font-family: "Bungee", sans-serif;
   font-style: normal;
 }
+
 .bg {
   background-blend-mode: multiply;
   width: 300px;
-  height: 300px;
+  height: 200px;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/shikamodblack.gif") center / cover no-repeat ;
-  background-color: transparent; /* opcional */
-}
+  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat ;
+  background-color: transparent;
+}/*
 .animbg {
   border-radius: 50%;
   width: 75px;
@@ -1051,9 +1049,9 @@ article.habilidade {
   overflow: hidden;
   display: flex;
   background: url("../animacao/hishika.gif") center / cover no-repeat;
-  background-color: transparent; /* opcional */
+  background-color: transparent; 
      transition: background-color 1.0s ease, color 0.4s ease;
-}
+}*/
 .tecImg{
   width: 40px;
   height: 40px;
@@ -1244,7 +1242,6 @@ margin-left: 0rem;
   .mobile-logo img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
   }
 
 
@@ -1257,9 +1254,8 @@ margin-left: 0rem;
   }
 
   .li-local-img img {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
+    width: 100px;
+    height: 105px;
     margin-right: 10px;
   }
 
@@ -1489,19 +1485,19 @@ margin-left: 0rem;
   }
   .bg {
   width: 300px;
-  height: 400px;
+  height: 250px;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
+  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat;
   background-color: transparent; /* opcional */
 }
 
   body.light .bg {
   width: 300px !important;
-  height: 300px !important;
+  height: 200px !important;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/shika.gif") center  / cover no-repeat;
+  background: url("../animacao/animacaowhite.gif") center  / cover no-repeat;
   background-color: transparent; /* opcional */
 }
 .projeto-descricao {
@@ -1575,10 +1571,10 @@ body.light {
   transition: background-color 1.0s ease, color 0.4s ease;
 }
 body.light .bg {
-  width: 450px;
-  height: 400px;
+  width: 300px;
+  height: 200px;
   display: flex;
-  background: url("../animacao/shika.gif") center / cover no-repeat;
+  background: url("../animacao/animacaowhite.gif") center / cover no-repeat;
   background-color: transparent; /* opcional */
 }
 
@@ -1921,7 +1917,6 @@ body.light .animbg {
   .li-local-img img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
   }
 
   .modal-dialog {
@@ -1983,14 +1978,6 @@ body.light .animbg {
     font-size: 1vw;
     font-family: sans-serif;
   }
-  .bg {
-  width: 500px;
-  height: 600px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
-  background-color: transparent; /* opcional */
-}
 /*
 .animbg {
   border-radius: 50%;
@@ -2007,16 +1994,16 @@ body.light .animbg {
   height: 200px;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/hishikawhite.gif") center / cover no-repeat;
+  background: url("../animacao/animacaowhite.gif") center / cover no-repeat;
   background-color: transparent; /* opcional */
      transition: background-color 1.0s ease, color 0.4s ease;
 }
 .bg {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/shikamodblack.gif") center / cover no-repeat;
+  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat;
   background-color: transparent; /* opcional */
 }/*
 .animbg {
@@ -2054,11 +2041,17 @@ body.light .animbg {
 }
 #loading .loadbg{
     background-blend-mode: multiply;
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 250px;
   overflow: hidden;
   display: flex;
-  background: url("../animacao/loading.gif") center / cover no-repeat ;
+  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat ;
   background-color: transparent; /* opcional */
+}
+.txtname {
+  color: rgb(136, 93, 245);
+  font-size: 1.5vw;
+  font-family: "Bungee", sans-serif;
+  font-style: normal;
 }
 }
