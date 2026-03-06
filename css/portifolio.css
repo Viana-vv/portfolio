@@ -130,28 +130,28 @@ body {
 }
 
 /* transforms */
-.Box  { transform:rotate(180deg) translateX(-50px); animation-delay:2s; }
+.Box  { transform:rotate(180deg) translateX(-50px); animation-delay:1.9s; }
 
 .Box2 { transform:translateX(25px); animation-delay:1.68s; }
 
-.Box3 { transform:rotate(180deg) translateX(-25px); animation-delay:1.08s; }
+.Box3 { transform:rotate(180deg) translateX(-25px); animation-delay:1.48s; }
 
-.Box4 { animation-delay:0.78s; }
+.Box4 { animation-delay:1.20s; }
 
-.Box5 { transform:rotate(180deg) translateX(25px); animation-delay:0.48s; }
+.Box5 { transform:rotate(180deg) translateX(25px); animation-delay:0.8s; }
 
 .Box6 { transform:translateX(-25px); animation-delay:1.32s; }
 
-.Box7 { transform:rotate(180deg) translateX(50px); animation-delay:2s; }
+.Box7 { transform:rotate(180deg) translateX(50px); animation-delay:1.9s; }
 
-.Box8 { transform:rotate(180deg); animation-delay:0.18s; }
+.Box8 { transform:rotate(180deg); animation-delay:0.4s; }
 
 .triangle-center{
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    height:100vh;
+
 }
 
 /* animação */
@@ -163,7 +163,14 @@ body {
         transform:scale(1);
     }
 
-    70%{
+
+
+    50%{
+         opacity:0.5;
+     border-bottom-color:rgb(153, 0, 255);
+    }
+
+    80%{
         border-bottom-color:transparent; /* perde o preenchimento */
     }
 
@@ -367,6 +374,7 @@ body {
     align-items: center;
     transition: opacity 0.4s ease;
     z-index: 9999;
+    
   }
 
   #loading.hidden {
@@ -381,6 +389,7 @@ body {
   }
   #content.show {
   opacity: 1;
+   
 }
 
 p {
