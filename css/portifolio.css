@@ -3,6 +3,177 @@ body {
   color: rgb(255, 255, 255);
   transition: background-color 1.0s ease, color 0.4s ease;
 }
+.triangle-row2-center{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:200px;
+}
+
+
+.triRow,
+.triRow2,
+.triRow3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* TRIANGULOS */
+
+.triA,
+.triB,
+.triC,
+.triD,
+.triE,
+.triF,
+.triG,
+.triH{
+
+    width:0;
+    height:0;
+
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    border-bottom:50px solid  rgb(136, 93, 245);
+
+    filter: drop-shadow(0 0 1.5px  rgb(136, 93, 245));
+
+    animation: aparecer 2s infinite;
+}
+
+/* TRIANGULO VAZIO */
+
+.triEmpty{
+    
+    width:0;
+    height:0;
+
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    border-bottom:50px solid transparent;
+
+    filter: drop-shadow(0 0 1.5px  rgb(136, 93, 245));
+}
+
+/* POSIÇÃO PARA FORMAR O V */
+
+.triA { transform:rotate(180deg) translateX(-50px); animation-delay:0s;}
+.triB { transform:translateX(25px); animation-delay:0.3s;}
+.triC { transform:rotate(180deg) translateX(-25px); animation-delay:0.6s;}
+.triD { animation-delay:0.9s;}
+.triE { transform:rotate(180deg) translateX(25px); animation-delay:1.2s;}
+.triF { transform:translateX(-25px); animation-delay:1.5s;}
+.triG { transform:rotate(180deg) translateX(50px); animation-delay:1.8s;}
+.triH { transform:rotate(180deg); animation-delay:2.1s;}
+
+/* ANIMAÇÃO */
+
+@keyframes aparecer{
+    0%{
+        opacity:0;
+        scale:0;
+    }
+
+    50%{
+        opacity:1;
+        scale:1;
+    }
+
+    100%{
+        opacity:0;
+        scale:0;
+    }
+}
+
+
+.containerBOX,
+.containerBOX2,
+.containerBOX3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.Box,
+.Box2,
+.Box3,
+.Box4,
+.Box5,
+.Box6,
+.Box7,
+.Box8{
+
+    width:0;
+    height:0;
+
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    border-bottom:50px solid rgb(136, 93, 245);
+
+    filter: drop-shadow(0 0 1.5px rgb(136, 93, 245));
+
+    animation: sumir 1s forwards;
+}
+
+.BoxVazio{
+    
+    width:0;
+    height:0;
+
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    border-bottom:50px solid transparent;
+
+    filter: drop-shadow(0 0 1.5px rgb(6, 6, 6));
+}
+
+/* transforms */
+.Box  { transform:rotate(180deg) translateX(-50px); animation-delay:2s; }
+
+.Box2 { transform:translateX(25px); animation-delay:1.68s; }
+
+.Box3 { transform:rotate(180deg) translateX(-25px); animation-delay:1.08s; }
+
+.Box4 { animation-delay:0.78s; }
+
+.Box5 { transform:rotate(180deg) translateX(25px); animation-delay:0.48s; }
+
+.Box6 { transform:translateX(-25px); animation-delay:1.32s; }
+
+.Box7 { transform:rotate(180deg) translateX(50px); animation-delay:2s; }
+
+.Box8 { transform:rotate(180deg); animation-delay:0.18s; }
+
+.triangle-center{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* animação */
+
+@keyframes sumir{
+    0%{
+        opacity:1;
+        border-bottom-color:black;
+        transform:scale(1);
+    }
+
+    70%{
+        border-bottom-color:transparent; /* perde o preenchimento */
+    }
+
+    100%{
+        opacity:0;
+        transform:scale(0);
+        border-bottom-color:transparent;
+    }
+}
+
 #overlay {
   position: fixed;
   top: 0; left: 0;
@@ -197,15 +368,7 @@ body {
     transition: opacity 0.4s ease;
     z-index: 9999;
   }
-#loading .loadbg{
-    background-blend-mode: multiply;
-  width: 300px;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat ;
-  background-color: transparent; /* opcional */
-}
+
   #loading.hidden {
     opacity: 0;
     pointer-events: none;
@@ -827,9 +990,6 @@ article.habilidade {
   margin-top: 2vw;
 }
 
-.contact-logo img {
-  max-width: 200px;
-}
 
 /* Lado direito */
 .contact-right {
@@ -1033,25 +1193,6 @@ article.habilidade {
   font-style: normal;
 }
 
-.bg {
-  background-blend-mode: multiply;
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat ;
-  background-color: transparent;
-}/*
-.animbg {
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/hishika.gif") center / cover no-repeat;
-  background-color: transparent; 
-     transition: background-color 1.0s ease, color 0.4s ease;
-}*/
 .tecImg{
   width: 40px;
   height: 40px;
@@ -1088,6 +1229,42 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
 /* ===== Mobile ===== */
 /*Mobile e tablets ficam melhores assim*/
 @media (max-width: 1000px) {
+  
+
+.Box,
+.Box2,
+.Box3,
+.Box4,
+.Box5,
+.Box6,
+.Box7,
+.Box8{
+
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-bottom:30px solid rgb(136, 93, 245);
+}
+
+.BoxVazio{
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-bottom:30px solid transparent;
+}
+
+/* ajusta o posicionamento */
+.Box  { transform:rotate(180deg) translateX(-30px); }
+
+.Box2 { transform:translateX(15px); }
+
+.Box3 { transform:rotate(180deg) translateX(-15px); }
+
+.Box5 { transform:rotate(180deg) translateX(15px); }
+
+.Box6 { transform:translateX(-15px); }
+
+.Box7 { transform:rotate(180deg) translateX(30px); }
+
+  
   .txtname {
   color: rgb(136, 93, 245);
   font-size: 1rem;
@@ -1489,23 +1666,7 @@ margin-left: 0rem;
   body.light .send-btn {
     font-size: clamp(1rem, 0.9rem, 1.3rem);
   }
-  .bg {
-  width: 200px;
-  height: 150px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat;
-  background-color: transparent; /* opcional */
-}
-
-  body.light .bg {
-  width: 200px !important;
-  height: 150px !important;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/animacaowhite.gif") center  / cover no-repeat;
-  background-color: transparent; /* opcional */
-}
+ 
 .projeto-descricao {
   color: #cec9d9;
   font-size: 0.8rem;
@@ -1544,9 +1705,39 @@ margin-left: 0rem;
 
     .pf-card p {
         font-size: 13px;
-    }
+    }/* CELULAR */
+
+.triA,
+.triB,
+.triC,
+.triD,
+.triE,
+.triF,
+.triG,
+.triH{
+
+border-left:15px solid transparent;
+border-right:15px solid transparent;
+border-bottom:30px solid  rgb(136, 93, 245);
 
 }
+
+.triEmpty{
+border-left:15px solid transparent;
+border-right:15px solid transparent;
+border-bottom:30px solid transparent;
+}
+
+.triA { transform:rotate(180deg) translateX(-30px);}
+.triB { transform:translateX(15px);}
+.triC { transform:rotate(180deg) translateX(-15px);}
+.triE { transform:rotate(180deg) translateX(15px);}
+.triF { transform:translateX(-15px);}
+.triG { transform:rotate(180deg) translateX(30px);}
+
+}
+
+
 
 span {
   color: rgb(136, 93, 245);
@@ -1575,13 +1766,6 @@ body.light {
   background-color: #ffffff;
   color: #000000;
   transition: background-color 1.0s ease, color 0.4s ease;
-}
-body.light .bg {
-  width: 300px;
-  height: 200px;
-  display: flex;
-  background: url("../animacao/animacaowhite.gif") center / cover no-repeat;
-  background-color: transparent; /* opcional */
 }
 
 
@@ -2004,24 +2188,7 @@ body.light .animbg {
   background-color: transparent; /* opcional */
      transition: background-color 1.0s ease, color 0.4s ease;
 }
-.bg {
-  width: 400px;
-  height: 300px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat;
-  background-color: transparent; /* opcional */
-}/*
-.animbg {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/hishika.gif") center / cover no-repeat;
-  background-color: transparent; 
-     transition: background-color 1.0s ease, color 0.4s ease;
-}*/
+
 .tecImg{
   width: 80px;
   height: 80px;
@@ -2045,19 +2212,71 @@ body.light .animbg {
 .tecnusing-container{
   padding: 100px;
 }
-#loading .loadbg{
-    background-blend-mode: multiply;
-  width: 300px;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  background: url("../animacao/animacaoPrincipal.gif") center / cover no-repeat ;
-  background-color: transparent; /* opcional */
-}
+
 .txtname {
   color: rgb(136, 93, 245);
   font-size: 1.5vw;
   font-family: "Bungee", sans-serif;
   font-style: normal;
 }
+
+.Box,
+.Box2,
+.Box3,
+.Box4,
+.Box5,
+.Box6,
+.Box7,
+.Box8{
+
+    border-left:40px solid transparent;
+    border-right:40px solid transparent;
+    border-bottom:80px solid rgb(136, 93, 245);
+}
+
+.BoxVazio{
+    border-left:40px solid transparent;
+    border-right:40px solid transparent;
+    border-bottom:80px solid transparent;
+}
+
+/* ajusta posição para manter o V */
+.Box  { transform:rotate(180deg) translateX(-80px); }
+
+.Box2 { transform:translateX(40px); }
+
+.Box3 { transform:rotate(180deg) translateX(-40px); }
+
+.Box5 { transform:rotate(180deg) translateX(40px); }
+
+.Box6 { transform:translateX(-40px); }
+
+.Box7 { transform:rotate(180deg) translateX(80px); }
+.triA,
+.triB,
+.triC,
+.triD,
+.triE,
+.triF,
+.triG,
+.triH{
+
+border-left:40px solid transparent;
+border-right:40px solid transparent;
+border-bottom:80px solid  rgb(136, 93, 245);
+
+}
+
+.triEmpty{
+border-left:40px solid transparent;
+border-right:40px solid transparent;
+border-bottom:80px solid transparent;
+}
+
+.triA { transform:rotate(180deg) translateX(-80px);}
+.triB { transform:translateX(40px);}
+.triC { transform:rotate(180deg) translateX(-40px);}
+.triE { transform:rotate(180deg) translateX(40px);}
+.triF { transform:translateX(-40px);}
+.triG { transform:rotate(180deg) translateX(80px);}
 }

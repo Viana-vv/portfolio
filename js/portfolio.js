@@ -124,13 +124,12 @@ window.addEventListener("load", function () {
   const loading = document.getElementById("loading");
   const content = document.getElementById("content");
 
-  loading.style.opacity = "0";
 
   setTimeout(function () {
     loading.style.display = "none";
     content.style.display = "block";
     content.classList.add("show");
-  }, 400); // tempo igual ao transition do CSS
+  }, 2000);
 });
 
 // JS principal para Faculdade/Técnico/Cursos
