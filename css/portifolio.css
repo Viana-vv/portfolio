@@ -282,84 +282,6 @@ body {
 .btn-voltar:hover {
     background: #4a00aa;
 }
-#pf-formacao {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-    padding: 40px;
-    background: #121212;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-}
-
-.pf-title {
-    font-size: 2vw;
-    margin-bottom: 20px;
-   color: rgb(136, 93, 245);
-  font-family: "Titan One", sans-serif;
-  }
-.formacoes-titulo{
-      font-size: 2vw;
-   color: rgb(136, 93, 245);
-  font-family: "Titan One", sans-serif;
-}
-.pf-buttons {
-    margin-bottom: 25px;
-}
-
-.pf-btn {
-    padding: 8px 18px;
-    margin-right: 8px;
-    border: none;
-    cursor: pointer;
-    background: #2a2a2a;
-    color: #fff;
-    transition: 0.2s;
-    border-radius: 5%;
-     font-size: 2vw;
-}
-/* começa tudo escondido */
-.pf-faculdade,
-.pf-tecnico,
-.pf-curso {
-  display: none;
-}
-
-.curso-col {
-  display: none;
-}
-.pf-btn:hover {
-    background: #444;
-}
-
-.pf-btn-active {
-    background: #6600ff;
-}
-
-.pf-card {
-    display: none;
-    background: #1e1e1e;
-    padding: 1%;
-    margin-bottom: 12px;
-    border-radius: 5%;
-    transition: 0.5ms ease-in;
-}
-.pf-card:hover{
-     background: #393939;
-     border: #6600ff 0.2vw solid;
-}
-
-.pf-card h3 {
-    margin: 0 0 8px 0;
-   font-size: 2vw;
-}
-
-.pf-card p {
-    margin: 2px 0;
-  font-size: 1vw;
-    opacity: 0.9;
-}
 
   #loading {
     position: fixed;
@@ -1716,37 +1638,7 @@ margin-left: 0rem;
   color: #ffffff;
   font-size: clamp(1rem, 0.9rem, 1.3rem);
 }
-    #pf-formacao {
-        padding: 25px 15px;
-    }
 
-    .pf-title {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .pf-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .pf-btn {
-        width: 100%;
-        font-size: 1.2rem;
-    }
-
-    .pf-card {
-        padding: 15px;
-    }
-
-    .pf-card h3 {
-        font-size: 16px;
-    }
-
-    .pf-card p {
-        font-size: 13px;
-    }/* CELULAR */
 
 .triA,
 .triB,
