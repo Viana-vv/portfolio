@@ -93,7 +93,7 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
         </li>
         <li><a class="menu-links" href="#Inicio" data-pt="Inicio" data-en="Home" alt="Botão inicio "
           >Inicio</a></li>
-        <li><a class="menu-links" href="#sobre" data-pt="Sobre" data-en="About" alt="Botão sobre ">Sobre</a></li>
+        <li><a class="menu-links" href="#about-section" data-pt="Sobre" data-en="About" alt="Botão sobre ">Sobre</a></li>
         <li><a class="menu-links" href="#projetos" data-pt="Projetos" data-en="Projects"
             alt="Botão projetos ">Projetos</a></li>
         <li><a class="menu-links" href="formacao.html" data-pt="Formações" data-en="Formations"
@@ -152,26 +152,88 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
     </main>
 
     &nbsp;
-    <section id="sobre">
-      <div class="container text-center">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <h3 class="projeto-titulo" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h3>
-            <p class="sobre"
-              data-pt="Sou André, tenho 18 anos, curso Análise e Desenvolvimento de Sistemas na Faculdade Impacta. Também sou formado em Desenvolvimento de Sistemas pela ETEC Aprígio Gonzaga e em Vendas pela Escola Barão de Ramalho. Tenho experiência com PHP, MySQL, HTML e CSS, e participei de um projeto voluntário em uma ONG. Estudo Java pela Alura e pretendo continuar minha trajetória acadêmica no ensino superior."
-              data-en="I'm André, 18 years old, currently studying Systems Analysis and Development at Impacta College. I also graduated in Systems Development from ETEC Aprígio Gonzaga and in Sales from Escola Barão de Ramalho. I have experience with PHP, MySQL, HTML, and CSS, and participated in a volunteer project in an NGO. I study Java at Alura and plan to continue my academic journey in higher education.">
-              Sou André, tenho 18 anos, curso Análise e Desenvolvimento de Sistemas na Faculdade Impacta. Também sou
-              formado em
-              Desenvolvimento de Sistemas pela ETEC Aprígio Gonzaga e em Vendas pela Escola Barão de Ramalho. Tenho
-              experiência
-              com PHP, MySQL, HTML e CSS, e participei de um projeto voluntário em uma ONG. Estudo Java pela Alura e
-              pretendo
-              continuar minha trajetória acadêmica no ensino superior.
-            </p>
-          </div>
-        </div>
+
+ <section id="about-section" aria-labelledby="about-title">
+  <div class="about-container">
+
+    <!-- Texto -->
+    <div class="about-content">
+      <span class="about-label"
+        data-pt="// SOBRE MIM"
+        data-en="// ABOUT ME">
+        // SOBRE MIM
+      </span>
+
+      <h2 id="about-title" class="about-title"
+        data-pt="QUEM SOU EU"
+        data-en="WHO I AM">
+        QUEM SOU EU
+      </h2>
+
+      <p class="about-text"
+        data-pt="Sou André, tenho 18 anos, curso Análise e Desenvolvimento de Sistemas e tenho formação técnica na área. Tenho experiência com PHP, MySQL, HTML e CSS. Participei de um projeto voluntário em uma ONG e atualmente estudo Java e Python para evoluir como desenvolvedor."
+        data-en="I am André, 18 years old, currently studying Systems Analysis and Development with a technical background in the field. I have experience with PHP, MySQL, HTML and CSS. I participated in a volunteer project for an NGO and I am currently studying Java and Python to grow as a developer.">
+
+        Sou André, tenho 18 anos, curso Análise e Desenvolvimento de Sistemas e tenho formação técnica na área.
+        Tenho experiência com <strong>PHP</strong>, <strong>MySQL</strong>, <strong>HTML</strong> e <strong>CSS</strong>.
+        Participei de um projeto voluntário em uma ONG e atualmente estudo <strong>Java</strong> e <strong>Python</strong> para evoluir como desenvolvedor.
+      </p>
+
+      <!-- Tags -->
+      <ul class="about-tags">
+        <li>PHP</li>
+<li>Python</li>
+        <li>Java</li>
+        <li>MySQL</li>
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+      </ul>
+    </div>
+
+    <!-- Cards -->
+    <div class="about-stats">
+
+      <div class="stat-card" tabindex="0">
+        <strong>5+</strong>
+        <span
+          data-pt="Projetos concluídos"
+          data-en="Completed projects">
+          Projetos concluídos
+        </span>
       </div>
-    </section>
+
+      <div class="stat-card" tabindex="0">
+        <strong>2</strong>
+        <span
+          data-pt="TCCs desenvolvidos"
+          data-en="Final projects developed">
+          TCCs desenvolvidos
+        </span>
+      </div>
+
+      <div class="stat-card" tabindex="0">
+        <strong>1</strong>
+        <span
+          data-pt="Projeto voluntário em ONG"
+          data-en="Volunteer project in NGO">
+          Projeto voluntário em ONG
+        </span>
+      </div>
+
+      <div class="stat-card" tabindex="0">
+        <strong>2+</strong>
+        <span
+          data-pt="Anos de estudo"
+          data-en="Years of study">
+          Anos de estudo
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <section id="projetos" class="projetos">
       <div class="container">
@@ -372,6 +434,8 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
   
 </article>
 
+
+
           <!-- Projeto: Estudos em Java -->
           <article class="projeto">
             <img fetchpriority="auto"
@@ -397,6 +461,43 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
                 target="_blank"><i class="fa-brands fa-github" name="botão github"></i> Github</a>
             </div>
           </article>
+          <!-- Projeto: Estudos em Python -->
+<article class="projeto">
+  <img fetchpriority="auto"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+    alt="Foto estudos python" class="projeto-img">
+
+  <div class="projeto-conteudo">
+    <h3 class="projeto-titulo"
+      data-pt="Estudos em Python"
+      data-en="Python Studies">
+      Estudos em Python
+    </h3>
+
+    <p class="projeto-descricao"
+      data-pt="Projeto pessoal de aperfeiçoamento em Python. Inclui exercícios práticos, automações e desenvolvimento de lógica de programação voltada ao back-end."
+      data-en="Personal project focused on improving Python skills. Includes practical exercises, automation and development of programming logic focused on back-end.">
+      
+      Projeto pessoal de aperfeiçoamento em <strong>Python</strong>.
+      Inclui exercícios práticos, automações e desenvolvimento de lógica de programação voltada ao <em>back-end</em>.
+    </p>
+
+    <div class="projeto-tecnologias">
+      <span class="tech scroll-ativo">Python</span>
+
+      <div class="status">
+        <div class="status_em_andamento"></div>
+        <p data-pt="Andamento" data-en="In Progress">Andamento</p>
+      </div>
+    </div>
+
+    <a href="https://github.com/Viana-vv/EstudosPython"
+      aria-label="Abrir GitHub em nova aba"
+      target="_blank">
+      <i class="fa-brands fa-github"></i> Github
+    </a>
+  </div>
+</article>
         </div>
 
         <section id="formacoes">
@@ -423,7 +524,171 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
           </div>
         </section>
 
+        <section id="tech-section" aria-labelledby="tech-title">
+  <header class="tech-header">
+    <h2 id="tech-title" class="tech-title"
+      data-pt="Tecnologias"
+      data-en="Technologies">
+      Tecnologias
+    </h2>
 
+    <p class="tech-subtitle"
+      data-pt="Principais tecnologias utilizadas nos projetos."
+      data-en="Main technologies used in projects.">
+      Principais tecnologias utilizadas nos projetos.
+    </p>
+  </header>
+
+  <!-- FRONT-END -->
+  <section id="Tecnologias" class="tech-group" aria-labelledby="frontend-title">
+    <h3 id="frontend-title" class="tech-category"
+      data-pt="Front-End"
+      data-en="Front-End">
+      Front-End
+    </h3>
+
+    <ul class="tech-grid">
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+          alt="HTML5 - linguagem de marcação para criação de páginas web">
+        <h4 class="tech-name">HTML</h4>
+        <span class="tech-desc">HTML5</span>
+      </li>
+
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+          alt="CSS3 - estilização de páginas web">
+        <h4 class="tech-name">CSS3</h4>
+        <span class="tech-desc">CSS3</span>
+      </li>
+
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          alt="JavaScript - linguagem de programação para interatividade">
+        <h4 class="tech-name">JavaScript</h4>
+        <span class="tech-desc">JS</span>
+      </li>
+
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+          alt="Bootstrap - framework para desenvolvimento de interfaces">
+        <h4 class="tech-name">Bootstrap</h4>
+        <span class="tech-desc"
+          data-pt="Framework"
+          data-en="Framework">
+          Framework
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- BACK-END -->
+  <section class="tech-group" aria-labelledby="backend-title">
+    <h3 id="backend-title" class="tech-category"
+      data-pt="Back-End"
+      data-en="Back-End">
+      Back-End
+    </h3>
+
+    <ul class="tech-grid">
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+          alt="PHP - linguagem de programação para backend">
+        <h4 class="tech-name">PHP</h4>
+        <span class="tech-desc">PHP</span>
+      </li>
+
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+          alt="Java - linguagem de programação orientada a objetos">
+        <h4 class="tech-name">Java</h4>
+        <span class="tech-desc">Java</span>
+      </li>
+
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+          alt="Python - linguagem de programação para backend e automação">
+        <h4 class="tech-name">Python</h4>
+        <span class="tech-desc">Python</span>
+      </li>
+
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+          alt="MySQL - sistema de gerenciamento de banco de dados">
+        <h4 class="tech-name">MySQL</h4>
+        <span class="tech-desc"
+          data-pt="Banco de Dados"
+          data-en="Database">
+          Banco de Dados
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FERRAMENTAS -->
+  <section class="tech-group" aria-labelledby="tools-title">
+    <h3 id="tools-title" class="tech-category"
+      data-pt="Ferramentas"
+      data-en="Tools">
+      Ferramentas
+    </h3>
+
+    <ul class="tech-grid">
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+          alt="Visual Studio Code - editor de código">
+        <h4 class="tech-name">VS Code</h4>
+        <span class="tech-desc"
+          data-pt="Editor"
+          data-en="Editor">
+          Editor
+        </span>
+      </li>
+
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
+          alt="IntelliJ IDEA - ambiente de desenvolvimento integrado">
+        <h4 class="tech-name">IntelliJ</h4>
+        <span class="tech-desc">IDE</span>
+      </li>
+
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+          alt="Git - sistema de controle de versão">
+        <h4 class="tech-name">Git</h4>
+        <span class="tech-desc"
+          data-pt="Versionamento"
+          data-en="Version Control">
+          Versionamento
+        </span>
+      </li>
+
+      <li class="tech-card" tabindex="0">
+        <img class="tech-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+          alt="Google Fonts - biblioteca de fontes">
+        <h4 class="tech-name">Google Fonts</h4>
+        <span class="tech-desc"
+          data-pt="Fontes"
+          data-en="Fonts">
+          Fontes
+        </span>
+      </li>
+    </ul>
+  </section>
+</section>
+    
         <!-- Seção Habilidades -->
         <section id="Habilidades" class="habilidades">
           <div class="container">
@@ -475,111 +740,11 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
           </div>
         </section>
 
-        <section id="Tecnologias">
-          <header class="section-header">
-            <h2 data-pt="Tecnologias" data-en="Technologies">Tecnologias</h2>
-            <p data-pt=" Principais tecnologias utilizadas." data-en="Main technologies used.">
-              Principais tecnologias utilizadas.</p>
-          </header>
-          <div class="tecnusing">
-            <div class="tecnusing-container">
-              <h1 class="tectxt">Front-End</h1>
-              <img fetchpriority="low" alt="Imagem do icone html" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-              <img fetchpriority="low" alt="Imagem do icone CSS" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-              <img fetchpriority="low" alt="imagem do icone javascript" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
 
-            </div>
-            <div class="tecnusing-container">
-              <h1 class="tectxt">Back-End</h1>
-              <img fetchpriority="low" alt="imagem do icone PHP" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-              <img fetchpriority="low" alt="imagem do icone java" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
 
-            </div>
-            <div class="tecnusing-container">
-              <h1 class="tectxt" data-pt="Banco de dados " data-en="database">Banco de dados</h1>
-              <img fetchpriority="low" alt="imagem do icone mysql" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
 
-            </div>
-            <div class="tecnusing-container">
-              <h1 class="tectxt" data-pt="Bibliotecas" data-en="library">Bibliotecas</h1>
-              <img fetchpriority="low" alt="imagem do icone do Bootstrap" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-              <!--   <img fetchpriority="low" src="img/img/lwind.png" alt="imagem ligthswind.ui" class="tecImg"> 
-        <img fetchpriority="low" src="img/img/reactbits.png" alt="imagem react bits" class="tecImg">  -->
 
-            </div>
-            <div class="tecnusing-container">
-              <h1 class="tectxt" data-pt="Fontes" data-en="sources">Fontes</h1>
-              <img fetchpriority="low" alt="Imagem do icone do google" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" />
-
-            </div>
-            <div class="tecnusing-container">
-              <h1 class="tectxt" data-pt="Ferramentas" data-en="tools">Ferramentas</h1>
-              <img fetchpriority="low" class="tecImg" alt="Imagem intellij"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
-              <img fetchpriority="low" alt="Imagem de icone do vscode" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
-              <img fetchpriority="low" src="img/img/phpmyadmin.png" alt="imagem phpmyadmin" class="tecImg">
-              <img fetchpriority="low" class="tecImg"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Imagem git" />
-
-            </div>
-          </div>
-          <!--
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <div class="col scroll-ativo">
-              <div class="tecnologias-local">
-                <img src="img/img/php.png" alt=" Imagem PHP">
-                <p>PHP</p>
-              </div>
-            </div>
-              <div class="col scroll-ativo">
-              <div class="tecnologias-local">
-                <img src="img/img/java.png" alt="Imagem  java">
-                <p>Java</p>
-              </div>
-            </div>
-
-            <div class="col scroll-ativo">
-              <div class="tecnologias-local">
-                <img src="img/img/mysql.png" alt="Imagem MySQL">
-                <p>MySQL</p>
-              </div>
-            </div>
-
-            <div class="col scroll-ativo">
-              <div class="tecnologias-local">
-                <img src="img/img/javascript-logo-javascript-icon-transparent-free-png.webp" alt="Imagem JS">
-                <p>JavaScript</p>
-              </div>
-            </div>
-
-            <div class="col scroll-ativo">
-              <div class="tecnologias-local">
-                <img src="img/img/html.png" alt="Imagem html">
-                <p>HTML</p>
-              </div>
-            </div>
-            <div class="col scroll-ativo">
-              <div class="tecnologias-local">
-                <img src="img/img/css.png" alt="Imagem CSS">
-                <p>CSS</p>
-              </div>
-            </div>
-
-          
-          </div>
-      
--->
-        </section>
+        
         <section id="contato" class="contact-section">
           <!-- Lado esquerdo: links + logo -->
           <div class="contact-left">
@@ -616,31 +781,8 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
                 </a>
               </div>
             </div>
-
-            <div class="contact-logo">
-              <div class="triangle-row2-center">
-
-                <div class="triRow">
-                  <div class="triA"></div>
-                  <div class="triB"></div>
-                  <div class="triEmpty"></div>
-                  <div class="triF"></div>
-                  <div class="triG"></div>
-                </div>
-
-                <div class="triRow2">
-                  <div class="triC"></div>
-                  <div class="triD"></div>
-                  <div class="triE"></div>
-                </div>
-
-                <div class="triRow3">
-                  <div class="triH"></div>
-                </div>
-              </div>
-            </div>
-
           </div>
+         
           <!-- Lado direito: formulário -->
           <div class="contact-right">
 
