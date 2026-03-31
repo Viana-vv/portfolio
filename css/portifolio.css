@@ -3,6 +3,23 @@ body {
   color: rgb(255, 255, 255);
   transition: background-color 1.0s ease, color 0.4s ease;
 }
+
+#github {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.github-chart {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.github-chart {
+  box-shadow: 0 0 20px rgba(179, 0, 255, 0.3);
+}
+
 /* SECTION */
 #about-section {
   color: #fff;
