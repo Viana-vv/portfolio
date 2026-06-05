@@ -448,7 +448,65 @@ Direitos autorais: Masashi Kishimoto / Shueisha / Studio Pierrot.
   
 </article>
 
+<article class="projeto">
+  <img fetchpriority="auto" src="img/img/saborlocal.png" alt="Projeto Sabor Local" class="projeto-img">
 
+  <div class="projeto-conteudo">
+    <h3 class="projeto-titulo"
+      data-pt="Sabor Local"
+      data-en="Sabor Local">
+      Sabor Local
+    </h3>
+
+    <p class="projeto-descricao"
+      data-pt="Aplicativo de restaurante com autenticação, gerenciamento de pedidos, pagamentos e painel administrativo, integrado através de APIs REST desenvolvidas no backend."
+      data-en="Restaurant application with authentication, order management, payments and administrative dashboard integrated through REST APIs.">
+
+      Aplicativo de restaurante com <strong>autenticação</strong>,
+      gerenciamento de <strong>pedidos</strong>,
+      pagamentos e <strong>painel administrativo</strong>,
+      integrado através de <strong>APIs REST</strong> desenvolvidas no backend.
+    </p>
+
+    <div class="projeto-tecnologias">
+      <span class="tech scroll-ativo">FlutterFlow</span>
+      <span class="tech scroll-ativo">Xano</span>
+      <span class="tech scroll-ativo">Figma</span>
+      <span class="tech scroll-ativo">SendGrid</span>
+      <span class="tech scroll-ativo">Asaas</span>
+      <div class="status">
+        <div class="status_concluido"></div>
+        <p>Concluído</p>
+      </div>
+    </div>
+
+    <a href="https://github.com/Viana-vv/flutter"
+      aria-label="Abrir GitHub em nova aba"
+      target="_blank">
+      <i class="fa-brands fa-github"></i>
+      Github
+    </a>
+
+ <button
+  type="button"
+  data-bs-toggle="modal"
+  data-bs-target="#videoModalSaborLocal"
+  class="btn"
+  data-pt="▶ Assistir"
+  data-en="▶ Watch">
+  ▶ Assistir
+</button>
+
+    <button type="button"
+      data-bs-toggle="modal"
+      data-bs-target="#ModalSaborLocal"
+      class="btn"
+      data-pt="+ Detalhes"
+      data-en="+ Details">
+      + Detalhes
+    </button>
+  </div>
+</article>
 
           <!-- Projeto: Estudos em Java -->
           <article class="projeto">
@@ -1076,6 +1134,61 @@ mais
             </div>
           </div>
         </div>
+
+<!-- Modal Vídeo -->
+<div class="modal fade" id="videoModalSaborLocal" tabindex="-1" aria-labelledby="videoModalSaborLocalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title"
+          id="videoModalSaborLocalLabel"
+          data-pt="Vídeo demonstrando o aplicativo Sabor Local"
+          data-en="Video demonstrating the Sabor Local application">
+
+          Vídeo demonstrando o aplicativo Sabor Local
+        </h5>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Fechar">
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+        <div id="videoSaborLocal"
+          style="margin-top:20px;"
+          class="video-container">
+
+          <iframe
+            src="https://www.youtube.com/embed/2VPTBGbd9_I"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+          data-pt="Fechar"
+          data-en="Close">
+
+          Fechar
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div> 
+
         <!-- Modal -->
         <div class="modal fade" id="Modal-detalhes" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -1112,6 +1225,78 @@ mais
             </div>
           </div>
         </div>
+
+<div class="modal fade" id="ModalSaborLocal" tabindex="-1" aria-labelledby="ModalSaborLocalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title"
+          id="ModalSaborLocalLabel"
+          data-pt="Sabor Local – Plataforma de pedidos e gestão para restaurantes"
+          data-en="Sabor Local – Restaurant ordering and management platform">
+
+          Sabor Local – Plataforma de pedidos e gestão para restaurantes
+        </h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p
+          data-pt="Sabor Local é uma plataforma acadêmica desenvolvida para digitalizar o processo de pedidos de um restaurante, oferecendo uma experiência completa desde o cadastro do cliente até a finalização da compra."
+          data-en="Sabor Local is an academic platform developed to digitize restaurant ordering processes, providing a complete experience from customer registration to checkout.">
+
+          <strong>Sabor Local</strong> é uma plataforma acadêmica desenvolvida para digitalizar o processo de pedidos de um restaurante, oferecendo uma experiência completa desde o cadastro do cliente até a finalização da compra.
+        </p>
+
+        <p
+          data-pt="O sistema conta com autenticação de usuários, validação de CPF, e-mail e senha, verificação por código enviado por e-mail, gerenciamento de endereços com preenchimento automático por CEP, catálogo de produtos, carrinho de compras, cadastro de cartões e fluxo completo de pagamento."
+          data-en="The system includes user authentication, CPF, email and password validation, email verification codes, address management with ZIP code lookup, product catalog, shopping cart, card registration and full payment flow.">
+
+          O sistema conta com autenticação de usuários, validação de CPF, e-mail e senha, verificação por código enviado por e-mail, gerenciamento de endereços com preenchimento automático por CEP, catálogo de produtos, carrinho de compras, cadastro de cartões e fluxo completo de pagamento.
+        </p>
+
+        <p
+          data-pt="Também foi desenvolvido um painel administrativo responsável pelo gerenciamento de produtos, cargos e colaboradores, permitindo operações de cadastro, edição e exclusão através de regras de negócio integradas ao backend."
+          data-en="An administrative dashboard was also developed for managing products, roles and employees through business rules integrated with the backend.">
+
+          Também foi desenvolvido um painel administrativo responsável pelo gerenciamento de produtos, cargos e colaboradores, permitindo operações de cadastro, edição e exclusão através de regras de negócio integradas ao backend.
+        </p>
+
+        <p
+          data-pt="Minhas contribuições: desenvolvimento das APIs REST, modelagem das regras de negócio, integração entre frontend e backend, implementação de autenticação por token, desenvolvimento dos fluxos de cadastro de usuários, endereços, cartões e pedidos, além da criação de Custom Actions para consumo das APIs."
+          data-en="My contributions: REST API development, business rule modeling, frontend/backend integration, token authentication, user, address, card and order flows, as well as Custom Actions creation for API consumption.">
+
+          <strong>Minhas contribuições:</strong> Desenvolvimento das APIs REST, modelagem das regras de negócio, integração entre frontend e backend, implementação de autenticação por token, desenvolvimento dos fluxos de cadastro de usuários, endereços, cartões e pedidos, além da criação de Custom Actions responsáveis pela comunicação com as APIs.
+        </p>
+
+        <p
+          data-pt="Tecnologias: FlutterFlow, Xano, API REST, JSON, autenticação por token, integração frontend/backend."
+          data-en="Technologies: FlutterFlow, Xano, REST API, JSON, token authentication and frontend/backend integration.">
+
+          <strong>Tecnologias:</strong>
+          FlutterFlow, Xano, Figma, SendGrid, Asaas e JSON
+        </p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+          data-pt="Fechar"
+          data-en="Close">
+          Fechar
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
         <!-- Modal -->
         <div class="modal fade" id="Modal2-detalhes" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
           <div class="modal-dialog">
