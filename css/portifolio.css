@@ -473,7 +473,6 @@ li {
 }
 
 .box-head {
-  border-bottom: rgb(136, 93, 245) solid 0.4vh;
   transition: background-color 1.0s ease, color 0.4s ease;
 }
  .menu-links {
@@ -1600,7 +1599,6 @@ margin-left: 0rem;
   .box-head {
     height: auto;
     margin-bottom: 0vh;
-    border-bottom: #a984ff solid 0.4vh;
   }
   .formacoes-titulo{
       font-size: 1.2rem;

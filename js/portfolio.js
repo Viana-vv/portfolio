@@ -129,7 +129,7 @@ window.addEventListener("load", function () {
     loading.style.display = "none";
     content.style.display = "block";
     content.classList.add("show");
-  }, 1000);
+  }, 600);
 });
 
 // JS principal para Faculdade/Técnico/Cursos
